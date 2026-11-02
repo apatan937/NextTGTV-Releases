@@ -1,0 +1,25 @@
+{
+    "schema":  1,
+    "channel":  "stable",
+    "versionName":  "1.1.224",
+    "versionCode":  10335,
+    "publishedAt":  "2026-11-02",
+    "notes":  "NextTGTV 1.1.224\n- 插件详情页「即点即播」：右边可以切换选集和相关推荐\n- 从全屏退回小窗时，小窗继续显示正在播的画面\n- 首页大图：继续观看显示 TMDB 片名和简介\n- 界面按钮统一样式，站点切换改成右侧面板\n- 自动检查更新：设置 › 关于 › 检查更新",
+    "minSupportedCode":  0,
+    "apks":  {
+                 "arm32":  {
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.224/NextTGTV-1.1.224-arm32.apk",
+                               "sha256":  "df93a49610c898d320bc50f4adff8e9b19fd874ac5eedc56925cc170636841ee",
+                               "size":  56368396
+                           },
+                 "arm64":  {
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.224/NextTGTV-1.1.224-arm64.apk",
+                               "sha256":  "77a2eacbd099084f1cb2e03f1748fac8d9c65c5d0f52b074812ad4721306c4cb",
+                               "size":  63713336
+                           }
+             },
+    "mirrors":  [
+                    "https://gh-proxy.org/",
+                    "https://ghfast.top/"
+                ]
+}
