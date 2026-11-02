@@ -1,21 +1,21 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "1.1.224",
-    "versionCode":  10335,
+    "versionName":  "1.1.233",
+    "versionCode":  10344,
     "publishedAt":  "2026-11-02",
-    "notes":  "NextTGTV 1.1.224\n- 插件详情页「即点即播」：右边可以切换选集和相关推荐\n- 从全屏退回小窗时，小窗继续显示正在播的画面\n- 首页大图：继续观看显示 TMDB 片名和简介\n- 界面按钮统一样式，站点切换改成右侧面板\n- 自动检查更新：设置 › 关于 › 检查更新",
+    "notes":  "NextTGTV 1.1.233\n\n【插件界面】\n- 新增三种插件界面：标准 / Viu 风格 / sooka 风格（设置 › 界面 › 插件界面）\n- Viu 风格：点开就在左边小窗播放，右边选集；集数多时自动分段；有 TMDB 资料的剧显示剧照卡片；电影页播放窗加大、推荐放在下方\n- sooka 风格：首页大图跟着页面滑动；详情页选集分段，焦点移动更顺滑\n- 正在播放的那一集按 OK 可以手动切换版本\n- 一个版本播不了会自动换下一个版本\n\n【搜索】\n- 插件搜索结果改成「站点筛选 + 列表 / 网格」，可开「严格」只看片名完全一致的\n- 主页搜索也能搜插件接口了，「选择片源」里也会出现插件结果\n- 设置 › 界面 › 主页搜索范围：可以多选要搜的 Emby 服务器、媒体库、插件接口和站点\n- 插件搜索加了上限，站点很多也不会卡死\n\n【首页】\n- 插件首页所有分类会自动加载海报，不用一行一行移过去\n- 海报行翻到最后不再留一块空白\n\n【界面】\n- 全 app 按钮统一成苹果风样式，焦点更清楚\n- 设置页颜色、字号、间距统一\n- 修复：Viu 小窗上沿露出一条、左侧栏被小窗挡住、选集上下移动乱跳等问题",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.224/NextTGTV-1.1.224-arm32.apk",
-                               "sha256":  "df93a49610c898d320bc50f4adff8e9b19fd874ac5eedc56925cc170636841ee",
-                               "size":  56368396
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.233/NextTGTV-1.1.233-arm32.apk",
+                               "sha256":  "80220728514ea06e8270fb6c6561f7ab667b379277b582268e6c74729b6cf6c8",
+                               "size":  56450524
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.224/NextTGTV-1.1.224-arm64.apk",
-                               "sha256":  "77a2eacbd099084f1cb2e03f1748fac8d9c65c5d0f52b074812ad4721306c4cb",
-                               "size":  63713336
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.233/NextTGTV-1.1.233-arm64.apk",
+                               "sha256":  "9a5543e42f0273e6fd93e8baf0927e47cf36c2ae218a72c1a01f59f680c0bd7c",
+                               "size":  63795160
                            }
              },
     "mirrors":  [
