@@ -1,21 +1,21 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "1.1.234",
-    "versionCode":  10345,
+    "versionName":  "1.1.236",
+    "versionCode":  10347,
     "publishedAt":  "2026-11-02",
-    "notes":  "NextTGTV 1.1.234\n\n【插件界面】\n- 新增三种插件界面：标准 / Viu 风格 / sooka 风格（设置 › 界面 › 插件界面）\n- Viu 风格：点开就在左边小窗播放，右边选集；集数多时自动分段；有 TMDB 资料的剧显示剧照卡片；电影页播放窗加大、推荐放在下方\n- sooka 风格：首页大图跟着页面滑动；详情页选集分段，焦点移动更顺滑\n- Viu 和 sooka 选集都有「正序 / 倒序」\n- 正在播放的那一集按 OK 可以手动切换版本\n- 一个版本播不了会自动换下一个版本\n- Viu、sooka 版式减少卡顿\n\n【弹幕】\n- 内置弹幕接口，新装就能搜弹幕\n- 插件接口自带的弹幕接口也会自动使用\n\n【搜索】\n- 插件搜索结果改成「站点筛选 + 列表 / 网格」，可开「严格」只看片名完全一致的\n- 主页搜索也能搜插件接口了，「选择片源」里也会出现插件结果\n- 设置 › 界面 › 主页搜索范围：可以多选要搜的 Emby 服务器、媒体库、插件接口和站点\n- 插件搜索加了上限，站点很多也不会卡死\n\n【首页】\n- 插件首页所有分类会自动加载海报\n- 海报行翻到最后不再留一块空白\n\n【界面】\n- 全 app 按钮统一成苹果风样式，焦点更清楚\n- 设置页颜色、字号、间距统一",
+    "notes":  "NextTGTV 1.1.236\n\n【流畅度】\n- 正式版启用代码优化 + 启动预编译配置（1.1.235 测试版的改动），启动、翻页、焦点移动更顺\n- 第一次打开后让电视空闲几分钟，系统会在后台预编译，之后更快\n\n【内存 / 图片】\n- 小内存电视的图片缓存降低，减少被系统杀后台、卡顿\n- 流畅优先模式下海报不再淡入，翻页少一次重绘\n\n【搜索】\n- 打字时自动出现「猜你想搜」片名，输入拼音首字母也行（例如 qyn → 庆余年），按下选一个就直接搜索\n\n【Viu 风格】\n- 详情页右栏「正序 / 倒序」按钮不再被挤掉，始终完整显示",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.234/NextTGTV-1.1.234-arm32.apk",
-                               "sha256":  "63722165bcc20294cbb7c88243c5be49e0a53f653b506fe2f61a92f45cee831c",
-                               "size":  56450448
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.236/NextTGTV-1.1.236-arm32.apk",
+                               "sha256":  "972f0f7b54d60df84946d43d80b761a68c26e02205c3994a07b938935cd660cd",
+                               "size":  49061002
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.234/NextTGTV-1.1.234-arm64.apk",
-                               "sha256":  "cc59af01cac55912a844ff8ecdcb9d0cf6776c67aae1e46eac66b39d3a5ba3de",
-                               "size":  63794944
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.236/NextTGTV-1.1.236-arm64.apk",
+                               "sha256":  "3992fd4a88fc2ac0b90e21aaf0ad025b741d3cdc402da3d20d054ab5dd5b8169",
+                               "size":  56405926
                            }
              },
     "mirrors":  [
