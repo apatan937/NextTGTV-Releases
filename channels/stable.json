@@ -1,21 +1,41 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "1.1.238",
-    "versionCode":  10349,
+    "versionName":  "1.1.240",
+    "versionCode":  10351,
     "publishedAt":  "2026-11-03",
-    "notes":  "NextTGTV 1.1.238\n\n【更流畅】\n- 插件页加载时不再整屏一直重画（以前加载期间几乎每一帧都卡）\n- 焦点移动时海报不再反复重建，翻页更顺\n- 插件接口列表的动图 logo 在流畅优先下不再一直播放\n- 重新开启代码优化（这次已解决以前导致播放闪退的问题）\n- 启动预编译配置改为按实际使用录制，启动和第一次进入各页面更快\n\n【焦点】\n- 修复进入详情页后焦点跳到左侧栏的问题\n- 详情页部分按键改用系统自带的焦点机制",
+    "notes":  "NextTGTV 1.1.240\r\n\r\n【更顺】\r\n- 以后用「检查更新」升级时，app 在安装的同时就预编译好，更新后马上就流畅（以前要等电视空闲很久才编译，期间会卡）\r\n- 首页大图在焦点停下后才切换，快速翻海报不再卡顿\r\n- TMDB 海报改用合适的尺寸，加载快约一倍\r\n\r\n【修复】\r\n- 详情页快速往下按时左侧栏自己打开、按右回不去的问题\r\n- 左侧栏打开时，后面的内容不再透出来\r\n- 输入框等弹窗改成不透明，去掉多余的说明文字\r\n- 选集 / 相关推荐 / 正序选中时不再显示不全\r\n- 播放按钮的文字居中\r\n\r\n【苹果电视风格 · 第一批】\r\n- 海报选中时放大、上浮并带阴影，不再是白框\r\n- 插件详情页（标准）改成一排胶囊按钮",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.238/NextTGTV-1.1.238-arm32.apk",
-                               "sha256":  "aa3112c91bc80c8537ac781f3931b60385d1c92657943c9611e28b83d68ec909",
-                               "size":  49093822
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.240/NextTGTV-1.1.240-arm32.apk",
+                               "sha256":  "cc164d67b788b0c8fccec217798079ed2201dc8524a84eefd4af3a13958a81d6",
+                               "size":  49110238,
+                               "dm":  {
+                                          "p28":  {
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.240/NextTGTV-1.1.240-arm32-p28.dm",
+                                                      "sha256":  "0b636ba51addca46713e0b15e4bb0d26884c49e27df54f739e14c19500e29721"
+                                                  },
+                                          "p31":  {
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.240/NextTGTV-1.1.240-arm32-p31.dm",
+                                                      "sha256":  "cb5be2d003ade6fd4bc77edeed4f876e8994af9559955cf7532c41755b980e11"
+                                                  }
+                                      }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.238/NextTGTV-1.1.238-arm64.apk",
-                               "sha256":  "f182d96e166bb3bcf4325db9fbcf4ad05d436b5c897cc2dfd510aa020b5f7aac",
-                               "size":  56438390
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.240/NextTGTV-1.1.240-arm64.apk",
+                               "sha256":  "5178082e1cd57f080f8369f751fe6383fe19bf41a33f4f065934b374e9602bd0",
+                               "size":  56455050,
+                               "dm":  {
+                                          "p28":  {
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.240/NextTGTV-1.1.240-arm64-p28.dm",
+                                                      "sha256":  "0b636ba51addca46713e0b15e4bb0d26884c49e27df54f739e14c19500e29721"
+                                                  },
+                                          "p31":  {
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.240/NextTGTV-1.1.240-arm64-p31.dm",
+                                                      "sha256":  "cb5be2d003ade6fd4bc77edeed4f876e8994af9559955cf7532c41755b980e11"
+                                                  }
+                                      }
                            }
              },
     "mirrors":  [
