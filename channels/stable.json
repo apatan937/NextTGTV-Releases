@@ -9,31 +9,31 @@
     "apks":  {
                  "arm32":  {
                                "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.241/NextTGTV-1.1.241-arm32.apk",
-                               "sha256":  "a033e4d79a2e8a49da7943148e3bb8107b65b7f2c2f300cefaddf5b5d55e8fad",
-                               "size":  49110102,
+                               "sha256":  "1061308f2f806fc8e57f25f7dabf5e501bdc412c5394b477b5d387d9fd4621c7",
+                               "size":  49110238,
                                "dm":  {
                                           "p28":  {
                                                       "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.241/NextTGTV-1.1.241-arm32-p28.dm",
-                                                      "sha256":  "e0f6a511813ac1eb35153077ce33838008e381f72c9d6d60ae6ea0e6d1d5c19e"
+                                                      "sha256":  "eddfb4d87e8419d7037ad99599bc93231f74013c03df3b06b968899f6f04e2f3"
                                                   },
                                           "p31":  {
                                                       "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.241/NextTGTV-1.1.241-arm32-p31.dm",
-                                                      "sha256":  "70753ad8b8c1b7407ab731f5efa4b241e16e058fd27dfafd33a77624c18756ca"
+                                                      "sha256":  "8f95a98f017cd6fc320b3430f1597e64e60d217e5e579ef909aebb3c02f422d0"
                                                   }
                                       }
                            },
                  "arm64":  {
                                "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.241/NextTGTV-1.1.241-arm64.apk",
-                               "sha256":  "71192dcc90b8126e1652d49343d233626be252a12943c43ec36f5d1ca2d5f578",
-                               "size":  56454906,
+                               "sha256":  "045ec41bc96329e57c81020e6b45d88545fbfa484e6b7672287448d4f4f19100",
+                               "size":  56455118,
                                "dm":  {
                                           "p28":  {
                                                       "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.241/NextTGTV-1.1.241-arm64-p28.dm",
-                                                      "sha256":  "e0f6a511813ac1eb35153077ce33838008e381f72c9d6d60ae6ea0e6d1d5c19e"
+                                                      "sha256":  "eddfb4d87e8419d7037ad99599bc93231f74013c03df3b06b968899f6f04e2f3"
                                                   },
                                           "p31":  {
                                                       "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.241/NextTGTV-1.1.241-arm64-p31.dm",
-                                                      "sha256":  "70753ad8b8c1b7407ab731f5efa4b241e16e058fd27dfafd33a77624c18756ca"
+                                                      "sha256":  "8f95a98f017cd6fc320b3430f1597e64e60d217e5e579ef909aebb3c02f422d0"
                                                   }
                                       }
                            }
