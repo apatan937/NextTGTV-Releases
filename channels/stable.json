@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "1.1.247",
-    "versionCode":  10358,
+    "versionName":  "1.1.250",
+    "versionCode":  10361,
     "publishedAt":  "2026-11-04",
-    "notes":  "NextTGTV 1.1.247\n\n【改进】\n- 选择片源：插件结果来自两个以上站点时，筛选行会出现各个站点的按钮，可以直接选只看某个站点\n- 全站按钮统一：获焦一律白底放大，选中一律白色粗体；侧栏获焦也会轻微放大\n- 设置页统一成「名称 … 当前值」的行，去掉页面里的「返回」按钮（用遥控器返回键），说明文字精简成一句\n\n【修复】\n- 插件里的「扫码登录」工具（例如摸鱼接口的夸克网盘扫码）不显示二维码\n\n【提速】\n- 去掉按钮和设置行获焦时的阴影（移动焦点时上一个选项不会再留下阴影框）\n- 去掉插件海报加载时的模糊淡入效果、片源面板的大阴影，翻行更顺",
+    "notes":  "NextTGTV 1.1.250\n\n【修复】\n- 播放界面：打开过弹幕面板后，每次呼出控制栏焦点都停在「弹幕」按钮上（要换一集才恢复）。现在呼出控制栏总是先到进度条\n- 弹幕面板：在 来源 / 外观 / 时间 / 密度 / 显示 之间左右移动时不再一格一格重建页面，按确定才切换，移动更顺\n- 弹幕播放卡顿：每条弹幕只排一次字，之后每帧直接贴图，弹幕多的时候播放画面更流畅\n\nNextTGTV 1.1.249\n\n【修复】\n- sooka 样式详情页：集数很多（1200 集以上）时，左边分段列表最下面的分段跑出屏幕、焦点看不见。现在分段列表会跟着焦点移动\n- 插件接口搜索：输入框按下键可以直接往下选，不用先到「搜索」按钮\n- 插件接口搜索：站点、猜你想搜、最近搜索这几行左右不再被切掉",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.247/NextTGTV-1.1.247-arm32.apk",
-                               "sha256":  "1898e71a03c8cb4973f4ade6b15f0079a84e5419634997730e61da33269c2777",
-                               "size":  49648418,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.250/NextTGTV-1.1.250-arm32.apk",
+                               "sha256":  "95f02d1dbeee9348e1851c1f9ee366060642cb2b92a3e408a11cceeaf8d24f61",
+                               "size":  49648206,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.247/NextTGTV-1.1.247-arm32-p28.dm",
-                                                      "sha256":  "b8336e588b00680c5afd657c5678132d1c43fe89c7320497e924463a6851bc45"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.250/NextTGTV-1.1.250-arm32-p28.dm",
+                                                      "sha256":  "5101d34b96f93a41a437154ae446aecb84f6a78649519a40f74532ad6f0b7ec4"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.247/NextTGTV-1.1.247-arm32-p31.dm",
-                                                      "sha256":  "5ddc9a448ea49d970ebcba2c1e70c55c1b6c8d0a6cdc3a1cd57ed7ef235f5022"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.250/NextTGTV-1.1.250-arm32-p31.dm",
+                                                      "sha256":  "20ddbdee41095bd02e0fc3d87906414d274eac5b13b2a6feb9832503faefd133"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.247/NextTGTV-1.1.247-arm64.apk",
-                               "sha256":  "e382659949eda18dc62cc6104652bcba2e5c5e0c0191ef0521d738a9ef4ea624",
-                               "size":  56992766,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.250/NextTGTV-1.1.250-arm64.apk",
+                               "sha256":  "71892a618959e606457ad5381a4e028a3f1d328f0d1e22a823545ffda397aca8",
+                               "size":  56993234,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.247/NextTGTV-1.1.247-arm64-p28.dm",
-                                                      "sha256":  "b8336e588b00680c5afd657c5678132d1c43fe89c7320497e924463a6851bc45"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.250/NextTGTV-1.1.250-arm64-p28.dm",
+                                                      "sha256":  "5101d34b96f93a41a437154ae446aecb84f6a78649519a40f74532ad6f0b7ec4"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.247/NextTGTV-1.1.247-arm64-p31.dm",
-                                                      "sha256":  "5ddc9a448ea49d970ebcba2c1e70c55c1b6c8d0a6cdc3a1cd57ed7ef235f5022"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v1.1.250/NextTGTV-1.1.250-arm64-p31.dm",
+                                                      "sha256":  "20ddbdee41095bd02e0fc3d87906414d274eac5b13b2a6feb9832503faefd133"
                                                   }
                                       }
                            }
