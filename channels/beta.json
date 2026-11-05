@@ -1,0 +1,45 @@
+{
+    "schema":  1,
+    "channel":  "beta",
+    "versionName":  "2.0.1",
+    "versionCode":  10367,
+    "publishedAt":  "2026-11-05",
+    "notes":  "NextTGTV 2.0.1\n\n【新插件界面】\n- 打开插件里的影片就自动播放：看过的从上次那集、上次的位置接着播，没看过从第 1 集开始\n- 视频直接在详情页背景里播放；按「全屏播放」进全屏，按返回回到详情页，视频不停\n- 「来源」一排：每条线路一个标签，能认出网盘（夸克 / 阿里 / UC / 百度 / 迅雷 / 115 / 123 / 天翼 / 移动 / PikPak）和清晰度，正在播的标「播放中」，按确定马上换\n- 「剧集」一排：正在播的那集标出来，卡片下面显示这一集在哪些网盘有；超过 50 集自动分段\n- 「从头播放」「简介」按钮；有 TMDB 信息的影片显示豆瓣 / IMDb / TMDB / Trakt 评分\n- 插件首页第一行是「继续观看」\n\n【包含 2.0.0 的全部内容】",
+    "minSupportedCode":  0,
+    "apks":  {
+                 "arm32":  {
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.0.1/NextTGTV-2.0.1-arm32.apk",
+                               "sha256":  "950418db89fa9fefde384cebe86260805bb301de1561b2f38d7cb4b251595737",
+                               "size":  49893920,
+                               "dm":  {
+                                          "p28":  {
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.0.1/NextTGTV-2.0.1-arm32-p28.dm",
+                                                      "sha256":  "49046d95d5d0aa6c894957760fcf0fd2c5c11e9ae2c58f29ace26efca672a797"
+                                                  },
+                                          "p31":  {
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.0.1/NextTGTV-2.0.1-arm32-p31.dm",
+                                                      "sha256":  "b59f51c253bc86e63e499ae87112f8d3de0f4491456eb54f9d674710486b7409"
+                                                  }
+                                      }
+                           },
+                 "arm64":  {
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.0.1/NextTGTV-2.0.1-arm64.apk",
+                               "sha256":  "03f0666740e2d3a71549c9f121c5f50061286a7a205f7991d47aa0c06afed668",
+                               "size":  57238028,
+                               "dm":  {
+                                          "p28":  {
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.0.1/NextTGTV-2.0.1-arm64-p28.dm",
+                                                      "sha256":  "49046d95d5d0aa6c894957760fcf0fd2c5c11e9ae2c58f29ace26efca672a797"
+                                                  },
+                                          "p31":  {
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.0.1/NextTGTV-2.0.1-arm64-p31.dm",
+                                                      "sha256":  "b59f51c253bc86e63e499ae87112f8d3de0f4491456eb54f9d674710486b7409"
+                                                  }
+                                      }
+                           }
+             },
+    "mirrors":  [
+                    "https://gh-proxy.org/",
+                    "https://ghfast.top/"
+                ]
+}
