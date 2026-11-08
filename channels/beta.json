@@ -4,36 +4,36 @@
     "versionName":  "2.1.13",
     "versionCode":  10385,
     "publishedAt":  "2026-11-08",
-    "notes":  "NextTGTV 2.1.8\n\n【弹幕】\n- 搜索弹幕：每个接口单独计时，先搜到的先显示，不再一起等 20 秒\n- 搜索时显示每个弹幕来源的状态（搜索中 / 找到几个 / 没有结果 / 连不上 / 超时）\n- 腾讯视频 / 爱奇艺只列出这部剧本身，不再列出解说、影单等无关视频\n- LogVar 这类聚合弹幕服务器会多等一会儿（25 秒）\n\n【插件】\n- 配置中心可以切换上面的分类了（综合设置 / 夸克 / UC / 百度 …），能找到各个网盘的登录按钮\n\n【包含 2.1.7 及以前的全部内容】",
+    "notes":  "NextTGTV 2.1.13\n\n【流畅度（实测）】\n- 海报卡片减重：外观不变，但每张卡片的计算量减少约 60%，插件首页左右翻海报、上下换行更顺\n- 同一条按键路线上，界面主线程的工作量比 2.1.12 再少约 11%\n\n【包含 2.1.12 及以前的全部内容】",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
                                "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.13/NextTGTV-2.1.13-arm32.apk",
-                               "sha256":  "736ada70da2707169f08f7b2a97fd9ca0ee99c190d68cee7e3a0db68a36a6769",
-                               "size":  69570887,
+                               "sha256":  "3b8098b3f884bdb4fb484aca94916973c6e57e809596cce67b59aa70acc8f1e8",
+                               "size":  69600059,
                                "dm":  {
                                           "p28":  {
                                                       "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.13/NextTGTV-2.1.13-arm32-p28.dm",
-                                                      "sha256":  "cee1b40de70df35af5f6a7161444214d632ff560b75e8ca21357e3a5e238d8ab"
+                                                      "sha256":  "03a27977e67051775c9625986432be81420703bf42ba65a37876c1f9790a8c9e"
                                                   },
                                           "p31":  {
                                                       "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.13/NextTGTV-2.1.13-arm32-p31.dm",
-                                                      "sha256":  "e198ba5a8528af7c367d0f7f6e8adf193a07b72d3a354880ac6e56d7bf64cf7d"
+                                                      "sha256":  "ffc758239fa9b2a2441e123273b2ce889dd513f98c3c902863491f80a949b617"
                                                   }
                                       }
                            },
                  "arm64":  {
                                "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.13/NextTGTV-2.1.13-arm64.apk",
-                               "sha256":  "b8dc0c379ff8aa0a5d78838200831f2bab6bbc767ed548efc571c6aad38fd28f",
-                               "size":  71920863,
+                               "sha256":  "843e310b92d9dc55568f9fb53ec5cd4b2975f63b10a8bf7c3ba4aeb47f061858",
+                               "size":  71950147,
                                "dm":  {
                                           "p28":  {
                                                       "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.13/NextTGTV-2.1.13-arm64-p28.dm",
-                                                      "sha256":  "cee1b40de70df35af5f6a7161444214d632ff560b75e8ca21357e3a5e238d8ab"
+                                                      "sha256":  "03a27977e67051775c9625986432be81420703bf42ba65a37876c1f9790a8c9e"
                                                   },
                                           "p31":  {
                                                       "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.13/NextTGTV-2.1.13-arm64-p31.dm",
-                                                      "sha256":  "e198ba5a8528af7c367d0f7f6e8adf193a07b72d3a354880ac6e56d7bf64cf7d"
+                                                      "sha256":  "ffc758239fa9b2a2441e123273b2ce889dd513f98c3c902863491f80a949b617"
                                                   }
                                       }
                            }
