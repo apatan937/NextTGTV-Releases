@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "2.1.22",
-    "versionCode":  10394,
+    "versionName":  "2.1.23",
+    "versionCode":  10395,
     "publishedAt":  "2026-11-09",
-    "notes":  "NextTGTV 2.1.22\r\n\r\n【备份上传到电视失败（HTTP 400）】\r\n- 备份里有「本地包」插件接口（file:///storage/…/FongMi.json）时，电视把整份备份判为无效。现在本地包也能正常导入\r\n  （电视上同一路径没有这个文件时，打开该接口会提示找不到本地包，其他内容不受影响）\r\n- 手机页面上传失败时会写出具体原因，不再只有「Invalid or unsupported backup」\r\n\r\n【国内不挂梯子 TMDB 失效】\r\n- 2.1.14 起默认改连 api.themoviedb.org，并说好「连不上自动换 api.tmdb.org」——但这个自动切换只装在了一个没被使用的\r\n  连接上，实际从来没有切换过。国内很多网络连不上 api.themoviedb.org，于是 TMDB 全部超时\r\n- 现在默认回到 2.1.13 用的 api.tmdb.org，连不上时真正自动换另一个官方地址（每个地址最多等 5 秒）\r\n\r\n【剧集卡片剧照不显示】\r\n- 真正的原因：TMDB 还没有剧照的集，我们把「没有」读成了文字 \"null\"，拼出一个不存在的图片地址，卡片就一直是黑的。\r\n  现在没有剧照的集显示灰色卡片和播放图标；演员没有照片、作品没有海报时也同样处理\r\n- 匹配成功、集名也对，剧集卡片却是黑的：TMDB 会替换还在播出的剧的图片，旧图片打开是 404。以前连着遇到 3 张这样的\r\n  图片，就把整个 TMDB 图片服务器当成「坏了」，之后所有剧照、logo、背景都不再加载，直到重启 App\r\n- 现在 TMDB 图片 404 不再算服务器故障；其他图片服务器的屏蔽也会在 10 分钟后自动解除\r\n- 遇到 TMDB 图片 404 时，详情页会自动重新获取一次最新的 TMDB 资料，换上新的图片地址\r\n\r\n【匹配 TMDB（手动）】\r\n- 插件详情页「简介」旁边新增「匹配 TMDB」：自动匹配错了或没匹配到时，可以改关键词搜索，选中正确的作品\r\n- 选择会一直记在这台设备上，直到按「恢复自动匹配」\r\n\r\n【TMDB 更好看、更省】\r\n- 背景图自带片名文字时，改用没有文字的背景图，不再和我们的 logo 重复\r\n- 同一时间对同一部作品的多个 TMDB 请求合并成一个\r\n- 片名识别更干净：去掉「国剧丨」「【BD压制】」「更新至E12」「全40集」「已刮削」「国语中字版」、《》书名号外的文字、\r\n  开头的表情符号和看不见的字符\r\n\r\n【包含 2.1.21 的全部内容】\r\n- Emby 登录失败保留所有输入、加密备份带上 Emby 密码、段 51–62 下键进剧集、摆渡 / 夸夸 别名、新剧 TMDB 匹配、\r\n  TMDB 图片缓存 1 天（详见 2.1.21）\r\n\r\n【包含 2.1.20 及以前的全部内容】",
+    "notes":  "NextTGTV 2.1.23\r\n\r\n（2.1.22 发布后又修了几处，但版本号没变，已经装了 2.1.22 的设备收不到。这些修复都在 2.1.23 里。）\r\n\r\n【国内不挂梯子 TMDB 失效】\r\n- 2.1.14 起默认改连 api.themoviedb.org，「连不上自动换 api.tmdb.org」的切换却从来没有生效，\r\n  国内很多网络因此 TMDB 全部超时。现在默认回到 api.tmdb.org，连不上时真正自动换另一个官方地址（每个最多等 5 秒）\r\n\r\n【备份上传到电视失败（HTTP 400）】\r\n- 备份里有「本地包」插件接口时，电视把整份备份判为无效。现在本地包也能正常导入\r\n- 手机页面上传失败时会写出具体原因\r\n\r\n【剧集卡片剧照】\r\n- TMDB 还没有剧照的集，以前被读成一个不存在的图片地址，卡片一直是黑的；现在显示灰色卡片和播放图标\r\n\r\n【盘搜 / 觅盘文件夹片名识别】\r\n- 网盘搜索结果的文件夹名五花八门，例如「🔥【更新至15集】【嫁金钗 (2026)】【4K/HDR】【国语中字】」\r\n  「——🚨《更15集》《 嫁金钗 (2026)》+《4k》🚨——」。现在能从中找出片名「嫁金钗」和年份 2026 去匹配 TMDB：\r\n  有「片名 (年份)」时取年份前面的片名；否则跳过只写集数、清晰度、语言、类型、地区的括号，取真正的片名\r\n- 识别不了的，可以在详情页按「匹配 TMDB」手动选\r\n\r\n【包含 2.1.22 的全部内容】\r\n- 匹配 TMDB（手动）、无字背景图、TMDB 请求合并、TMDB 图片 404 不再屏蔽整个图片服务器（详见 2.1.22）\r\n\r\n【包含 2.1.21 及以前的全部内容】",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.22/NextTGTV-2.1.22-arm32.apk",
-                               "sha256":  "ae04a3560f36acf018817c4e744a884a3e5a9838e3fb7eb9823f245833ebfcf1",
-                               "size":  69658079,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.23/NextTGTV-2.1.23-arm32.apk",
+                               "sha256":  "3a698e98eb8df85705582d012b318d6a42491884a577eb421f7b44d8286b7744",
+                               "size":  69659111,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.22/NextTGTV-2.1.22-arm32-p28.dm",
-                                                      "sha256":  "b977db49b9e9c36e7c20786d3d9d36a81a6397672b88bcaac0f3f251cb470e92"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.23/NextTGTV-2.1.23-arm32-p28.dm",
+                                                      "sha256":  "59228778552ecd84acf77812d9cf318bb9165f85ca5c0f6032423e4205ccc08b"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.22/NextTGTV-2.1.22-arm32-p31.dm",
-                                                      "sha256":  "1aeeb2552a42e0d1dacb4766842e199508b032683d6c073778586aec8d1633fb"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.23/NextTGTV-2.1.23-arm32-p31.dm",
+                                                      "sha256":  "97b56ade66a2c80b6b43051bdde7d826e512ca5b9530c65ecfada355762c4a15"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.22/NextTGTV-2.1.22-arm64.apk",
-                               "sha256":  "ac9843df193e26c3601256591d088da1f27ff71776700e4718a8d091eceb8e6c",
-                               "size":  72008523,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.23/NextTGTV-2.1.23-arm64.apk",
+                               "sha256":  "eb54f8c74fb9f5b5ca34250ace27604292c52f3b91944a1dc81f9c8473e7f23d",
+                               "size":  72009255,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.22/NextTGTV-2.1.22-arm64-p28.dm",
-                                                      "sha256":  "b977db49b9e9c36e7c20786d3d9d36a81a6397672b88bcaac0f3f251cb470e92"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.23/NextTGTV-2.1.23-arm64-p28.dm",
+                                                      "sha256":  "59228778552ecd84acf77812d9cf318bb9165f85ca5c0f6032423e4205ccc08b"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.22/NextTGTV-2.1.22-arm64-p31.dm",
-                                                      "sha256":  "1aeeb2552a42e0d1dacb4766842e199508b032683d6c073778586aec8d1633fb"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.23/NextTGTV-2.1.23-arm64-p31.dm",
+                                                      "sha256":  "97b56ade66a2c80b6b43051bdde7d826e512ca5b9530c65ecfada355762c4a15"
                                                   }
                                       }
                            }
