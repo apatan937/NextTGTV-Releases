@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "2.1.28",
-    "versionCode":  10400,
-    "publishedAt":  "2026-11-09",
-    "notes":  "NextTGTV 2.1.28\r\n\r\n【全局观看历史】\r\n- 插件页右上角（搜索旁边）新增时钟按钮：所有插件接口、所有站点看过的剧都在这一页，不用再一个站一个站找\r\n- 同一部剧在不同站点看过只显示一张卡（标「N 个站点」），显示最后一次看的那个；不同季分开显示\r\n- 卡片上：看到第几集、来源线路、哪个接口、多久之前看的、进度条\r\n- 确定：直接从上次的位置继续播放\r\n- 菜单键 / 长按确定：继续播放、从头播放、在当前接口的其他站点搜索、删除这条记录\r\n- 顶部筛选：全部 / 没看完 / 看完了\r\n- 续播时原站点打不开，错误窗口里多一个「在其他站点搜索」\r\n\r\n【播放页：按一下确定就暂停】\r\n- 控制条隐藏时，按一下确定立即暂停（或继续播放），同时显示控制条和进度，和 Netflix、YouTube、爱奇艺 TV 一样\r\n- 按住确定不会来回暂停 / 播放\r\n\r\n【包含 2.1.26 的全部内容】\r\n- 插件里的 WebDAV 备份可以用了（内置 FongMi 同款 WebDAV 组件）\r\n\r\n【包含 2.1.25 的全部内容】\r\n- 插件详情页全屏播放后返回不再慢一拍\r\n\r\n【包含 2.1.24 及以前的全部内容】",
+    "versionName":  "2.1.30",
+    "versionCode":  10402,
+    "publishedAt":  "2026-11-10",
+    "notes":  "NextTGTV 2.1.30\r\n\r\n【流畅度优化（实测后改的）】\r\n- 插件站点：从详情页返回分类页更快，不再整页重新加载海报，焦点直接回到刚才那张海报\r\n- 插件详情页：打开更快，先显示标题、按钮、来源和剧集，屏幕下方的「演员」「同站推荐」稍后再出来\r\n- 海报行左右移动更顺：海报评分的文字不再每次重新格式化\r\n- 每次按键少做一些后台记录工作（诊断日志的处理挪到后台线程）\r\n- 匹配 TMDB 时不再每次都去系统密钥库解密 TMDB Key\r\n\r\n【包含 2.1.29 的全部内容】\r\n【播放：选集显示剧集名】\r\n- 播放器里的「选集」改成卡片：每一集有编号、剧照、剧集名、简介，正在播的那集标「播放中」\r\n- 插件接口和 Emby 都有；从主页观看历史直接续播也有\r\n- Emby 的剧集自己没有剧照时，自动用 TMDB 的剧照\r\n- 没匹配到 TMDB 的剧显示「第N集」和线路名\r\n- 集数很多的剧，选集面板打开更快\r\n- 不想要可以关：设置 › 播放 › 其他播放选项 ›「选集显示剧集名和剧照」\r\n\r\n【杜比视界 4K 很卡】\r\n- 有的杜比视界片源（Profile 5）在不支持杜比视界的电视 / 盒子上会被改成软件解码，4K 画面很卡，详情页也跟着卡\r\n- 现在改用硬件解码播放，不再卡。注意：这类片源在不支持杜比视界的设备上颜色会偏（原来软件解码时也一样偏），建议选 HDR10 或普通版本\r\n\r\n【匹配 TMDB】\r\n- 搜索框里可以用左右键移动光标了，光标默认在最后一个字后面\r\n- 搜索框里按下键到搜索结果，按右键到最后一个字后再按右去「搜索」\r\n- 手动匹配过的作品，分类和首页的海报、年份、评分也会换成 TMDB 的（修复：匹配后分类页海报不显示）\r\n\r\n【媒体徽章：离线图片】\r\n- 设置 › 播放 › 媒体徽章 ›「下载离线图片」：把徽章包的图片下载到本机，以后不联网也能显示，而且更省内存\r\n- 图片加载不出来时显示徽章文字，不再是空白\r\n- 不会自动下载，点了才下载；可以更新、删除\r\n\r\n【主页搜索搜不到我的接口】\r\n- 有多个插件接口时，主页搜索现在搜你最后打开的那个接口（以前会搜列表里的第一个）\r\n- 也可以在「主页搜索范围」里自己指定\r\n\r\n【存储空间】\r\n- 图片缓存和视频缓存设了上限，存储小的盒子不再被占满\r\n- 下载更新前如果空间不够，会先自动清理可以重新生成的缓存\r\n\r\n【其他】\r\n- DNS 设置移到：设置 › 数据源 › 网络\r\n- 输入对话框（搜索弹幕等）：从「取消」按到「确定」不再卡两三秒\r\n- 夸克等网盘线路提示「依赖本地连续代理」时，诊断日志里会记录具体原因，方便下个版本修复（遇到请上报日志）\r\n\r\n【包含 2.1.28 的全部内容】\r\n【遥控器防连跳】\r\n- 有的遥控器 / 盒子按一下方向键会连发两三次，焦点一下跳好几格（选站点、选集、系统输入法里都会这样）\r\n- 设置 › 界面 › 布局 › 打开「遥控器防连跳」：按一下只走一格，按住不放照样连续滚动\r\n- 默认关闭，没有这个问题的电视不用开\r\n- 诊断日志里会记录每次方向键的原始信息，开了还跳的话请上报日志\r\n\r\n注意：系统自带的输入法键盘不归 NextTGTV 管，那里的连跳只能换遥控器或用手机遥控解决。\r\n\r\n【包含 2.1.27 的全部内容】\r\n【全局观看历史】\r\n- 插件页右上角（搜索旁边）新增时钟按钮：所有插件接口、所有站点看过的剧都在这一页，不用再一个站一个站找\r\n- 同一部剧在不同站点看过只显示一张卡（标「N 个站点」），显示最后一次看的那个；不同季分开显示\r\n- 卡片上：看到第几集、来源线路、哪个接口、多久之前看的、进度条\r\n- 确定：直接从上次的位置继续播放\r\n- 菜单键 / 长按确定：继续播放、从头播放、在当前接口的其他站点搜索、删除这条记录\r\n- 顶部筛选：全部 / 没看完 / 看完了\r\n- 续播时原站点打不开，错误窗口里多一个「在其他站点搜索」\r\n\r\n【播放页：按一下确定就暂停】\r\n- 控制条隐藏时，按一下确定立即暂停（或继续播放），同时显示控制条和进度，和 Netflix、YouTube、爱奇艺 TV 一样\r\n- 按住确定不会来回暂停 / 播放\r\n\r\n【包含 2.1.26 的全部内容】\r\n- 插件里的 WebDAV 备份可以用了（内置 FongMi 同款 WebDAV 组件）\r\n\r\n【包含 2.1.25 的全部内容】\r\n- 插件详情页全屏播放后返回不再慢一拍\r\n\r\n【包含 2.1.24 及以前的全部内容】",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.28/NextTGTV-2.1.28-arm32.apk",
-                               "sha256":  "2ad6403811ebabc9a6f870ae222f64d7da27b095e65a84579babb99ea6ab6bde",
-                               "size":  69817083,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.30/NextTGTV-2.1.30-arm32.apk",
+                               "sha256":  "f4d5bf65af5fa29f3b8ee53ab0f4819d76c5dee305fa7b6c10c6ca3494106c8c",
+                               "size":  69849359,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.28/NextTGTV-2.1.28-arm32-p28.dm",
-                                                      "sha256":  "054089fb79a72470bb22c69bfd6af0da75f8d962e4f120ab6c64e0a02909dddc"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.30/NextTGTV-2.1.30-arm32-p28.dm",
+                                                      "sha256":  "7f1827f0a141bbdedf82512cdefb71559011cc5d6737a3756ecc19aa9e9a2283"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.28/NextTGTV-2.1.28-arm32-p31.dm",
-                                                      "sha256":  "34d23f17b79e4f1b611f0df5dadf79aa4d243acf6fcd8be3296a878359fddf3f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.30/NextTGTV-2.1.30-arm32-p31.dm",
+                                                      "sha256":  "27497a5be82911355d4b14fc7180364176080537cb282785c833fa53ccbef08e"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.28/NextTGTV-2.1.28-arm64.apk",
-                               "sha256":  "8d85ae75072c61d2cc5d5b3ef39f134ae43689c7d9c7eca45418029f6e53e717",
-                               "size":  72167263,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.30/NextTGTV-2.1.30-arm64.apk",
+                               "sha256":  "de8b75f791313ada39bf3ca42a392b2f9e8a377f9dcc340f7bade1b2c7d88476",
+                               "size":  72199175,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.28/NextTGTV-2.1.28-arm64-p28.dm",
-                                                      "sha256":  "054089fb79a72470bb22c69bfd6af0da75f8d962e4f120ab6c64e0a02909dddc"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.30/NextTGTV-2.1.30-arm64-p28.dm",
+                                                      "sha256":  "7f1827f0a141bbdedf82512cdefb71559011cc5d6737a3756ecc19aa9e9a2283"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.28/NextTGTV-2.1.28-arm64-p31.dm",
-                                                      "sha256":  "34d23f17b79e4f1b611f0df5dadf79aa4d243acf6fcd8be3296a878359fddf3f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.30/NextTGTV-2.1.30-arm64-p31.dm",
+                                                      "sha256":  "27497a5be82911355d4b14fc7180364176080537cb282785c833fa53ccbef08e"
                                                   }
                                       }
                            }
