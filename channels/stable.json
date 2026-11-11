@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "3.3",
-    "versionCode":  10406,
-    "publishedAt":  "2026-11-10",
-    "notes":  "NextTGTV 3.3\r\n\r\n【插件接口搜索】\r\n- 键盘弹出后按返回键，会先收起键盘并跳到下面的「猜你想搜 / 搜索范围」行，可以继续往下走到「最近搜索」和「清除」；再按一次返回才退出搜索\r\n- 长按 OK 删除一条最近搜索、或按「清除」后，焦点留在最近搜索 / 搜索范围这一行，不会再跳回输入框把键盘弹出来\r\n\r\n【弹幕】\r\n- 插件网盘源的集名是文件名时（如 Tulsa.King.S01E01…mkv），接口内置弹幕（人人等）现在能对上正确的季和集，不再错拿别的季（例：塔尔萨之王第一季第1集，以前会错拿第四季的 276 条，正确的第一季有 4405 条）\r\n\r\n【包含 3.2 的全部内容】\r\n【TMDB Key 两种都能用】\r\n- 设置 › TMDB 的 Key 框现在既能填短的「API Key」（32 位），也能填长的「API 读取访问令牌」（eyJ 开头那串），两种都可以正常使用\r\n- 从网页复制时带进来的空格、换行，或多粘的「Bearer 」会自动去掉\r\n- 「测试 TMDB API」不再把长令牌当成填错\r\n- 注意：如果你自己设置了 TMDB API 代理，代理需要转发 Authorization 请求头，长令牌才能通过代理使用；短 Key 不受影响\r\n\r\n【包含 3.1 的全部内容】\r\n【修复闪退】\r\n- 插件站点（如「玩偶」「空枪」）：在详情页小窗播放后按「全屏播放」，再按方向键会闪退，已修复（夸克、百度网盘都一样）\r\n- 播放中打开「媒体信息」，左右翻到后面的卡片再回到「关闭」按下键会闪退，已修复\r\n- 设置 › TMDB：代理地址里误填了 TMDB「API 读取令牌」（eyJ 开头的长串）时，点「测试 TMDB 图片」会闪退，已修复；现在会直接提示填错了，海报也会改用官方地址正常显示\r\n- 万一遇到同类焦点错误，App 会丢掉这一次按键并恢复焦点，而不是闪退\r\n\r\n【隐私】\r\n- 诊断日志不再记录 TMDB 读取令牌等 JWT 令牌\r\n\r\n【包含 3.0 的全部内容】\r\n【修复】\r\n- B站等插件站点播放失败（ERROR_CODE_IO_BAD_HTTP_STATUS / 403）：本地代理播放时会带上插件给的来源信息（Referer），B站视频可以正常播放了\r\n\r\n【包含 2.1.30 的全部内容】\r\n【流畅度优化（实测后改的）】\r\n- 插件站点：从详情页返回分类页更快，不再整页重新加载海报，焦点直接回到刚才那张海报\r\n- 插件详情页：打开更快，先显示标题、按钮、来源和剧集，屏幕下方的「演员」「同站推荐」稍后再出来\r\n- 海报行左右移动更顺：海报评分的文字不再每次重新格式化\r\n- 每次按键少做一些后台记录工作（诊断日志的处理挪到后台线程）\r\n- 匹配 TMDB 时不再每次都去系统密钥库解密 TMDB Key\r\n\r\n【包含 2.1.29 的全部内容】\r\n【播放：选集显示剧集名】\r\n- 播放器里的「选集」改成卡片：每一集有编号、剧照、剧集名、简介，正在播的那集标「播放中」\r\n- 插件接口和 Emby 都有；从主页观看历史直接续播也有\r\n- Emby 的剧集自己没有剧照时，自动用 TMDB 的剧照\r\n- 没匹配到 TMDB 的剧显示「第N集」和线路名\r\n- 集数很多的剧，选集面板打开更快\r\n- 不想要可以关：设置 › 播放 › 其他播放选项 ›「选集显示剧集名和剧照」\r\n\r\n【杜比视界 4K 很卡】\r\n- 有的杜比视界片源（Profile 5）在不支持杜比视界的电视 / 盒子上会被改成软件解码，4K 画面很卡，详情页也跟着卡\r\n- 现在改用硬件解码播放，不再卡。注意：这类片源在不支持杜比视界的设备上颜色会偏（原来软件解码时也一样偏），建议选 HDR10 或普通版本\r\n\r\n【匹配 TMDB】\r\n- 搜索框里可以用左右键移动光标了，光标默认在最后一个字后面\r\n- 搜索框里按下键到搜索结果，按右键到最后一个字后再按右去「搜索」\r\n- 手动匹配过的作品，分类和首页的海报、年份、评分也会换成 TMDB 的（修复：匹配后分类页海报不显示）\r\n\r\n【媒体徽章：离线图片】\r\n- 设置 › 播放 › 媒体徽章 ›「下载离线图片」：把徽章包的图片下载到本机，以后不联网也能显示，而且更省内存\r\n- 图片加载不出来时显示徽章文字，不再是空白\r\n- 不会自动下载，点了才下载；可以更新、删除\r\n\r\n【主页搜索搜不到我的接口】\r\n- 有多个插件接口时，主页搜索现在搜你最后打开的那个接口（以前会搜列表里的第一个）\r\n- 也可以在「主页搜索范围」里自己指定\r\n\r\n【存储空间】\r\n- 图片缓存和视频缓存设了上限，存储小的盒子不再被占满\r\n- 下载更新前如果空间不够，会先自动清理可以重新生成的缓存\r\n\r\n【其他】\r\n- DNS 设置移到：设置 › 数据源 › 网络\r\n- 输入对话框（搜索弹幕等）：从「取消」按到「确定」不再卡两三秒\r\n- 夸克等网盘线路提示「依赖本地连续代理」时，诊断日志里会记录具体原因，方便下个版本修复（遇到请上报日志）\r\n\r\n【包含 2.1.28 的全部内容】\r\n【遥控器防连跳】\r\n- 有的遥控器 / 盒子按一下方向键会连发两三次，焦点一下跳好几格（选站点、选集、系统输入法里都会这样）\r\n- 设置 › 界面 › 布局 › 打开「遥控器防连跳」：按一下只走一格，按住不放照样连续滚动\r\n- 默认关闭，没有这个问题的电视不用开\r\n- 诊断日志里会记录每次方向键的原始信息，开了还跳的话请上报日志\r\n\r\n注意：系统自带的输入法键盘不归 NextTGTV 管，那里的连跳只能换遥控器或用手机遥控解决。\r\n\r\n【包含 2.1.27 的全部内容】\r\n【全局观看历史】\r\n- 插件页右上角（搜索旁边）新增时钟按钮：所有插件接口、所有站点看过的剧都在这一页，不用再一个站一个站找\r\n- 同一部剧在不同站点看过只显示一张卡（标「N 个站点」），显示最后一次看的那个；不同季分开显示\r\n- 卡片上：看到第几集、来源线路、哪个接口、多久之前看的、进度条\r\n- 确定：直接从上次的位置继续播放\r\n- 菜单键 / 长按确定：继续播放、从头播放、在当前接口的其他站点搜索、删除这条记录\r\n- 顶部筛选：全部 / 没看完 / 看完了\r\n- 续播时原站点打不开，错误窗口里多一个「在其他站点搜索」\r\n\r\n【播放页：按一下确定就暂停】\r\n- 控制条隐藏时，按一下确定立即暂停（或继续播放），同时显示控制条和进度，和 Netflix、YouTube、爱奇艺 TV 一样\r\n- 按住确定不会来回暂停 / 播放\r\n\r\n【包含 2.1.26 的全部内容】\r\n- 插件里的 WebDAV 备份可以用了（内置 FongMi 同款 WebDAV 组件）\r\n\r\n【包含 2.1.25 的全部内容】\r\n- 插件详情页全屏播放后返回不再慢一拍\r\n\r\n【包含 2.1.24 及以前的全部内容】",
+    "versionName":  "3.6",
+    "versionCode":  10409,
+    "publishedAt":  "2026-11-11",
+    "notes":  "ArcaneTV 3.6\n\n【改名】\n- NextTGTV 改名为 ArcaneTV：桌面名称、首页、设置、手机助手网页都换成新名字\n- 直接覆盖升级即可，接口、观看历史、Emby 账号和所有设置都会保留\n\n【插件接口搜索：重新设计，自带字母键盘】\n- 新的 tvOS 风格搜索页：输入的文字大字显示在中间，下面一排 A–Z，再下一排 1–0 和「删除 / 清空 / 中文 / 搜索」\n- 输入片名拼音首字母（如 gwr），「猜你想搜」会给出片名，按 OK 直接搜\n- 想直接打中文：在输入框上按 OK，或按「中文」，才会弹出电视自带的输入法（搜狗等）；按返回键先收起键盘，焦点回到字母键盘\n- 打开搜索页不再自动弹出系统键盘，解决了 TCL 等电视上搜狗输入法弹出后焦点出不来的问题\n\n【其他输入框】\n- 「匹配 TMDB」、添加接口、采集源、Emby 图标搜索：按 OK 才弹出键盘，返回键先收起键盘\n- 首页搜索保持原来的样子\n\n【插件首页顶栏】\n- 历史和搜索移到左边、紧挨着源名称：从「首页」往左按一下就是搜索，再按一下就是历史\n\n【支持网盘里的蓝光 / DVD 原盘 ISO】\n- 播放 .iso 光盘镜像时，先读取镜像里的目录（只读几百 KB，不下载整个文件），自动找到正片：蓝光取最长的播放列表，DVD 取最大的那组 VOB，然后直接播放里面的视频\n- 蓝光的 TrueHD / DTS-HD / LPCM 音轨和 PGS 字幕都可以在播放器里切换\n- 不支持光盘菜单和多角度；读不出目录时会直接提示原因\n- 原盘码率很高（20~80 Mbps），网盘下载速度不够时会一直缓冲，这时请换转码 / 普画线路或 mkv 版本",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.3/NextTGTV-3.3-arm32.apk",
-                               "sha256":  "ea0e6d80aadbc2ec4e9f0f41312c96efb331eaf19087b49e81927ed13872974d",
-                               "size":  69851411,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm32.apk",
+                               "sha256":  "bedddfe5bf3d7dd9854fb084c29784c76e7df6aaaa1f31db4facbb5c392bb52d",
+                               "size":  69882911,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.3/NextTGTV-3.3-arm32-p28.dm",
-                                                      "sha256":  "482a7786304f4423da8ea9372ce0fcd589dccb624fa5db41102730755733ce9f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm32-p28.dm",
+                                                      "sha256":  "826d8185beaf7e725d8ff539a039fc065f50616f3180a132f98caabbd611caa3"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.3/NextTGTV-3.3-arm32-p31.dm",
-                                                      "sha256":  "ed4a4fcc359bc707e27a8603b3e1a314dcc43befb5f90bbab09e7067fed4733f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm32-p31.dm",
+                                                      "sha256":  "ed352ccac0ba1c4cb476ec185ae37e25ca516a28a960d94f60d95d472858ae9e"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.3/NextTGTV-3.3-arm64.apk",
-                               "sha256":  "5e1abfd1360bc1a0fcdb8021de71c0461d15ee578fe882abf04f9e39374c4d1b",
-                               "size":  72201363,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm64.apk",
+                               "sha256":  "fb0af42717d2b3b98775bd6c8d4c9c92a8122607d6df87f39e5862567ad79343",
+                               "size":  72233083,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.3/NextTGTV-3.3-arm64-p28.dm",
-                                                      "sha256":  "482a7786304f4423da8ea9372ce0fcd589dccb624fa5db41102730755733ce9f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm64-p28.dm",
+                                                      "sha256":  "826d8185beaf7e725d8ff539a039fc065f50616f3180a132f98caabbd611caa3"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.3/NextTGTV-3.3-arm64-p31.dm",
-                                                      "sha256":  "ed4a4fcc359bc707e27a8603b3e1a314dcc43befb5f90bbab09e7067fed4733f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm64-p31.dm",
+                                                      "sha256":  "ed352ccac0ba1c4cb476ec185ae37e25ca516a28a960d94f60d95d472858ae9e"
                                                   }
                                       }
                            }
