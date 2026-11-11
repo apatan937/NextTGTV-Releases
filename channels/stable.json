@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "3.8",
-    "versionCode":  10411,
+    "versionName":  "3.9",
+    "versionCode":  10412,
     "publishedAt":  "2026-11-11",
-    "notes":  "ArcaneTV 3.8\n\n【B站弹幕】\n- 修复 B站插件源播放时没有弹幕：B站弹幕接口返回的是 deflate 压缩数据，之前没有解压，读不出弹幕；现在能正常显示\n- 同样适用于其他用 deflate 压缩的弹幕地址",
+    "notes":  "ArcaneTV 3.9\n\n【插件页面】\n- 修复焦点回到顶栏后，屏幕左边会出现一片黑色渐变遮罩、几秒后才消失的问题（以前左侧栏目留下的遮罩，左栏去掉后没有一起去掉）\n\n【B站弹幕（3.8）】\n- 修复 B站插件源播放时没有弹幕：B站弹幕接口返回的是 deflate 压缩数据，之前没有解压；现在能正常显示",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.8/ArcaneTV-3.8-arm32.apk",
-                               "sha256":  "ead7db9df1a981edaee479c8c97ee92a00e83ec06833d6a6ffa24a29645e6e1b",
-                               "size":  69886527,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.9/ArcaneTV-3.9-arm32.apk",
+                               "sha256":  "04e46a293dc337ee14cc18bebebdae4b0a62394869a8ed967f58aa24e994da31",
+                               "size":  69886495,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.8/ArcaneTV-3.8-arm32-p28.dm",
-                                                      "sha256":  "9cbc6fecf935f0e2543280a8bf7df9148119610f5ba173087e8fd984ec610130"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.9/ArcaneTV-3.9-arm32-p28.dm",
+                                                      "sha256":  "acea9189b91e38285ff0866ed07ae5525a9fc1cbbbd2af8e5595f992a1a6e631"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.8/ArcaneTV-3.8-arm32-p31.dm",
-                                                      "sha256":  "f86b4a67f81522348311614790296562cac350f080a9f6452c6a8be8fa6b10b2"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.9/ArcaneTV-3.9-arm32-p31.dm",
+                                                      "sha256":  "4d976eab8a0b2eeab05e6f41e45c57b2bd90685f8a934a427647eff1e0413300"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.8/ArcaneTV-3.8-arm64.apk",
-                               "sha256":  "8c6fb99c9b403615ea48f87ff1cc42e5505c38e786d18b8c9250b03f7d5daee4",
-                               "size":  72236599,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.9/ArcaneTV-3.9-arm64.apk",
+                               "sha256":  "90f788bb421d26b40257fbf3b2a22e3983edffd4ad118aa843f4ce0b2850e445",
+                               "size":  72236435,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.8/ArcaneTV-3.8-arm64-p28.dm",
-                                                      "sha256":  "9cbc6fecf935f0e2543280a8bf7df9148119610f5ba173087e8fd984ec610130"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.9/ArcaneTV-3.9-arm64-p28.dm",
+                                                      "sha256":  "acea9189b91e38285ff0866ed07ae5525a9fc1cbbbd2af8e5595f992a1a6e631"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.8/ArcaneTV-3.8-arm64-p31.dm",
-                                                      "sha256":  "f86b4a67f81522348311614790296562cac350f080a9f6452c6a8be8fa6b10b2"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.9/ArcaneTV-3.9-arm64-p31.dm",
+                                                      "sha256":  "4d976eab8a0b2eeab05e6f41e45c57b2bd90685f8a934a427647eff1e0413300"
                                                   }
                                       }
                            }
