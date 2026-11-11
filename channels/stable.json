@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "3.6",
-    "versionCode":  10409,
+    "versionName":  "3.7",
+    "versionCode":  10410,
     "publishedAt":  "2026-11-11",
-    "notes":  "ArcaneTV 3.6\n\n【改名】\n- NextTGTV 改名为 ArcaneTV：桌面名称、首页、设置、手机助手网页都换成新名字\n- 直接覆盖升级即可，接口、观看历史、Emby 账号和所有设置都会保留\n\n【插件接口搜索：重新设计，自带字母键盘】\n- 新的 tvOS 风格搜索页：输入的文字大字显示在中间，下面一排 A–Z，再下一排 1–0 和「删除 / 清空 / 中文 / 搜索」\n- 输入片名拼音首字母（如 gwr），「猜你想搜」会给出片名，按 OK 直接搜\n- 想直接打中文：在输入框上按 OK，或按「中文」，才会弹出电视自带的输入法（搜狗等）；按返回键先收起键盘，焦点回到字母键盘\n- 打开搜索页不再自动弹出系统键盘，解决了 TCL 等电视上搜狗输入法弹出后焦点出不来的问题\n\n【其他输入框】\n- 「匹配 TMDB」、添加接口、采集源、Emby 图标搜索：按 OK 才弹出键盘，返回键先收起键盘\n- 首页搜索保持原来的样子\n\n【插件首页顶栏】\n- 历史和搜索移到左边、紧挨着源名称：从「首页」往左按一下就是搜索，再按一下就是历史\n\n【支持网盘里的蓝光 / DVD 原盘 ISO】\n- 播放 .iso 光盘镜像时，先读取镜像里的目录（只读几百 KB，不下载整个文件），自动找到正片：蓝光取最长的播放列表，DVD 取最大的那组 VOB，然后直接播放里面的视频\n- 蓝光的 TrueHD / DTS-HD / LPCM 音轨和 PGS 字幕都可以在播放器里切换\n- 不支持光盘菜单和多角度；读不出目录时会直接提示原因\n- 原盘码率很高（20~80 Mbps），网盘下载速度不够时会一直缓冲，这时请换转码 / 普画线路或 mkv 版本",
+    "notes":  "ArcaneTV 3.7\n\n【插件首页顶栏】\n- 分类少的源（如体育、瓜子），分类按钮现在在屏幕正中；分类多的源和以前一样，紧跟在搜索按钮后面往右排\n\n【改名】\n- NextTGTV 改名为 ArcaneTV：桌面名称、首页、设置、手机助手网页都换成新名字\n- 直接覆盖升级即可，接口、观看历史、Emby 账号和所有设置都会保留\n\n【插件接口搜索：重新设计，自带字母键盘】\n- 新的 tvOS 风格搜索页：输入的文字大字显示在中间，下面一排 A–Z，再下一排 1–0 和「删除 / 清空 / 中文 / 搜索」\n- 输入片名拼音首字母（如 gwr），「猜你想搜」会给出片名，按 OK 直接搜\n- 想直接打中文：在输入框上按 OK，或按「中文」，才会弹出电视自带的输入法（搜狗等）；按返回键先收起键盘，焦点回到字母键盘\n- 打开搜索页不再自动弹出系统键盘，解决了 TCL 等电视上搜狗输入法弹出后焦点出不来的问题\n\n【其他输入框】\n- 「匹配 TMDB」、添加接口、采集源、Emby 图标搜索：按 OK 才弹出键盘，返回键先收起键盘\n- 首页搜索保持原来的样子\n\n【插件首页顶栏】\n- 历史和搜索移到左边、紧挨着源名称：从「首页」往左按一下就是搜索，再按一下就是历史\n\n【支持网盘里的蓝光 / DVD 原盘 ISO】\n- 播放 .iso 光盘镜像时，先读取镜像里的目录（只读几百 KB，不下载整个文件），自动找到正片：蓝光取最长的播放列表，DVD 取最大的那组 VOB，然后直接播放里面的视频\n- 蓝光的 TrueHD / DTS-HD / LPCM 音轨和 PGS 字幕都可以在播放器里切换\n- 不支持光盘菜单和多角度；读不出目录时会直接提示原因\n- 原盘码率很高（20~80 Mbps），网盘下载速度不够时会一直缓冲，这时请换转码 / 普画线路或 mkv 版本",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm32.apk",
-                               "sha256":  "bedddfe5bf3d7dd9854fb084c29784c76e7df6aaaa1f31db4facbb5c392bb52d",
-                               "size":  69882911,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.7/ArcaneTV-3.7-arm32.apk",
+                               "sha256":  "10dc47245eca893b79f737b4a7b113a3860ad7b54103d8a1541be3ddd10db626",
+                               "size":  69887043,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm32-p28.dm",
-                                                      "sha256":  "826d8185beaf7e725d8ff539a039fc065f50616f3180a132f98caabbd611caa3"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.7/ArcaneTV-3.7-arm32-p28.dm",
+                                                      "sha256":  "83912e29bf90e34dc4b26cbe85772eb9cc8bf3715ec8a30256df24458b58f645"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm32-p31.dm",
-                                                      "sha256":  "ed352ccac0ba1c4cb476ec185ae37e25ca516a28a960d94f60d95d472858ae9e"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.7/ArcaneTV-3.7-arm32-p31.dm",
+                                                      "sha256":  "e51692a365ff2b783dae45ce97564ee345de1457db1c91dd6aefa0f1ee1523ac"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm64.apk",
-                               "sha256":  "fb0af42717d2b3b98775bd6c8d4c9c92a8122607d6df87f39e5862567ad79343",
-                               "size":  72233083,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.7/ArcaneTV-3.7-arm64.apk",
+                               "sha256":  "3144e608f978ab88a9f5b12e207711b621bd6b1ecfecb7b0cadb43e8a66ac3ce",
+                               "size":  72237167,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm64-p28.dm",
-                                                      "sha256":  "826d8185beaf7e725d8ff539a039fc065f50616f3180a132f98caabbd611caa3"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.7/ArcaneTV-3.7-arm64-p28.dm",
+                                                      "sha256":  "83912e29bf90e34dc4b26cbe85772eb9cc8bf3715ec8a30256df24458b58f645"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.6/ArcaneTV-3.6-arm64-p31.dm",
-                                                      "sha256":  "ed352ccac0ba1c4cb476ec185ae37e25ca516a28a960d94f60d95d472858ae9e"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v3.7/ArcaneTV-3.7-arm64-p31.dm",
+                                                      "sha256":  "e51692a365ff2b783dae45ce97564ee345de1457db1c91dd6aefa0f1ee1523ac"
                                                   }
                                       }
                            }
