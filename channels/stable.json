@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "4.4",
-    "versionCode":  10417,
+    "versionName":  "4.5",
+    "versionCode":  10418,
     "publishedAt":  "2026-11-12",
-    "notes":  "ArcaneTV 4.4\n\n【修复】\n- 插件分类页：在 1080p 电视（多数电视的标准尺寸）上一屏只放得下一行大海报，看不到上下行。现在列数会按屏幕高度调整，一屏能看到当前行、上一行的年份和下一行海报\n\n【新功能】\n- 本地导入单个 Python 爬虫（.py）：把 .py 放进内部存储的 tv 文件夹、Download 或 U 盘，在「插件接口 › 本地包」里会自动列出，选中即添加为一个接口（名称「本地 · 文件名」）；也可以用「浏览文件夹」自己选\n- 只有一个站点的接口（例如导入的 .py）第一次打开时直接进入该站点，不再先选站点",
+    "notes":  "ArcaneTV 4.5\n\n【新功能：直播】\n- 首页左侧栏新增「直播」（红色 LIVE 图标；沉浸 / 海报墙首页在顶部导航里）\n- 插件接口自带直播时，插件页顶栏「历史」旁边多一个 LIVE 按钮，进去直接看这个接口的直播\n- 直播源：所有插件接口自带的直播会自动列出（同一个地址只列一次）；也可以自己添加直播源：m3u / txt 地址、带 lives 的 json（例如 V.json，会把里面的直播源全部加进来），或 /sdcard/… 本地文件\n- 切换直播源：频道列表左上角就是当前直播源，按确定选择其他源；菜单键里也可以切换\n- 打开直播直接全屏播放上次看的频道；自动选中的直播源打不开时，自动换下一个能用的源\n- 遥控器：▲▼ 换台　◀▶ 换线路　确定 打开频道列表（左边分组，右边频道）　菜单键 切换直播源 / 换线路 / 刷新 / 添加直播源　数字键 按台号换台　返回 关闭列表 / 退出\n- 一条线路打不开或长时间没有画面，自动换下一条线路（还在下载数据的慢线路会多等一会儿）\n- 直播源带节目单（EPG）时，换台提示和频道列表里显示正在播出和稍后的节目\n- 直播源暂时连不上时，使用上一次成功加载的频道列表\n\n【改进】\n- 插件分类页：海报上方不再露出上一行的半截文字，海报离标题更近",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.4/ArcaneTV-4.4-arm32.apk",
-                               "sha256":  "9dd8503a49fba816523f41cbe39d3c9acd757ed5f8915e1c5bf23cffd52f84f7",
-                               "size":  69932435,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.5/ArcaneTV-4.5-arm32.apk",
+                               "sha256":  "2767eff081d9bb5facb717216e912307c9f7b5ee0b917a599f9f1fc306ae1d39",
+                               "size":  69988551,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.4/ArcaneTV-4.4-arm32-p28.dm",
-                                                      "sha256":  "b3589fe08ce0ce144fc94b88334867100fbf97ac92823746e45deb64cbb8d49a"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.5/ArcaneTV-4.5-arm32-p28.dm",
+                                                      "sha256":  "3546a25880489e731b81a4a63df081dfec2f0f7fcaffbdfd66ef306f5ccef125"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.4/ArcaneTV-4.4-arm32-p31.dm",
-                                                      "sha256":  "f666ad3e60d712eb717ae19f690a30052f62e4e5aa794b8fdd1d0ccd1ba44cc0"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.5/ArcaneTV-4.5-arm32-p31.dm",
+                                                      "sha256":  "7e74b76039ac18258c46a3d09b39740dff48722e744a23792a420457aa2ae8df"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.4/ArcaneTV-4.4-arm64.apk",
-                               "sha256":  "c82a4fb3060939930313deb3bf33fd82350a643cf0fa405a59ad539c0cad29d2",
-                               "size":  72282603,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.5/ArcaneTV-4.5-arm64.apk",
+                               "sha256":  "0ee85060a0ae89188a19e5c9b9b2f19cba3f8497dfc61958f8943a40ec212fe2",
+                               "size":  72338635,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.4/ArcaneTV-4.4-arm64-p28.dm",
-                                                      "sha256":  "b3589fe08ce0ce144fc94b88334867100fbf97ac92823746e45deb64cbb8d49a"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.5/ArcaneTV-4.5-arm64-p28.dm",
+                                                      "sha256":  "3546a25880489e731b81a4a63df081dfec2f0f7fcaffbdfd66ef306f5ccef125"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.4/ArcaneTV-4.4-arm64-p31.dm",
-                                                      "sha256":  "f666ad3e60d712eb717ae19f690a30052f62e4e5aa794b8fdd1d0ccd1ba44cc0"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v4.5/ArcaneTV-4.5-arm64-p31.dm",
+                                                      "sha256":  "7e74b76039ac18258c46a3d09b39740dff48722e744a23792a420457aa2ae8df"
                                                   }
                                       }
                            }
