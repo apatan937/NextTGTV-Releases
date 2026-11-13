@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "5.3",
-    "versionCode":  10426,
+    "versionName":  "5.4",
+    "versionCode":  10427,
     "publishedAt":  "2026-11-13",
-    "notes":  "ArcaneTV 5.3\r\n\r\n【播放：AVS2 / AVS+ 视频】\r\n- 支持 TS 里的国产 AVS2 / AVS+ 视频（例如 CCTV-6 4K 录制的晚会）：以前只有声音没有画面，现在电视有 AVS2 / AVS+ 硬件解码时可以正常出画\r\n- 电视没有对应解码器时，会直接提示「这台设备不支持 AVS2 视频编码」，不再黑屏只放声音（播放页和直播都会提示）\r\n- 诊断日志会记录每次播放的音视频轨道，以及这台设备支持哪些视频解码器，方便排查\r\n\r\n【直播】\r\n- 支持 XMLTV 节目单：m3u 自带的节目单地址（x-tvg-url，包括 .xml.gz）和接口里的 XMLTV 节目单都能显示「正在播 / 下一个」\r\n- 添加直播源时直接告诉你结果，例如「读到 120 个频道」或「现在读不到这个地址」，不再地址写错了也显示添加成功\r\n\r\n【观看记录】\r\n- 观看记录从 60 条增加到 200 条\r\n- 看完的一集被误播几秒，不会再把「看完了」改成「看到 0:08」\r\n\r\n【播放】\r\n- 拖到片尾看彩蛋时，不会马上被切到下一集（拖动后 30 秒内不自动切集）\r\n\r\n【备份】\r\n- 备份新增：自己添加的直播源（不含 Cookie 等密钥）、启动后进入的页面、观看记录；旧版本的备份照样可以恢复\r\n\r\n【本地包】\r\n- 解压 zip 包时先解到临时文件夹，成功后再放进去；已有的 peizhi.json（网盘配置）会保留，不会被新包覆盖\r\n\r\n【其他】\r\n- 局域网服务给电视自己的播放预留连接，其他设备占满时不影响本机播放\r\n- TMDB 匹配缓存改在后台保存，翻海报时更顺",
+    "notes":  "ArcaneTV 5.4\r\n\r\n【播放】\r\n- 新增「睡眠」定时（播放页工具栏）：播完本集停止，或 30 / 60 / 90 分钟后自动暂停，睡前看剧不会整夜自动播下一集\r\n- 修复刚进播放页就退出时，弹幕匹配结果晚到还去操作已关闭的播放器\r\n\r\n【直播】\r\n- 频道收藏：菜单键里选「收藏「台名」」，收藏的台出现在频道列表最上面的「★ 收藏」分组（每个直播源分开记）\r\n- 打开频道列表时，同一分组前 30 个台的「正在播」节目会自动加载\r\n- 打开 / 关闭频道列表后焦点更稳，弱电视上不会出现列表打开了却按键没反应\r\n\r\n【插件】\r\n- 某个站点卡死时，不会再一直转圈、连带这个站的详情和播放都卡住：超时后会提示，并自动换一个新的实例\r\n- 退出 App 再打开（App 没被系统关掉时），已加载的插件直接复用，不再重新加载一遍\r\n- 搜索结果的状态栏会写出「N 站最近连续失败，暂时跳过」；同样的词再搜一次会把这些站一起重试\r\n- 插件的本地代理播放地址起播前少请求一次，网盘类线路起播更快、更不容易出错\r\n\r\n【其他】\r\n- 从观看历史续播后，回到插件页才会重新打开观看历史，不会被别的播放（Emby、搜索）误触发",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.3/ArcaneTV-5.3-arm32.apk",
-                               "sha256":  "71e57420c8f51977332dddd2340160e28b6f50ffd9ba5eb38524f2616242f871",
-                               "size":  70055415,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.4/ArcaneTV-5.4-arm32.apk",
+                               "sha256":  "528e1fa4175ea251f1ae2718a0cfd1ecb1a727f10e807379d1ee615cdce1ddc2",
+                               "size":  70061747,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.3/ArcaneTV-5.3-arm32-p28.dm",
-                                                      "sha256":  "1a904ec3fb13dabcc71e82060d15e4bfa22e9825e302d95a6fa97fe46bcfe44d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.4/ArcaneTV-5.4-arm32-p28.dm",
+                                                      "sha256":  "e1d1f4a19d66c761f5bcb9791b0d1e87dddd499a6f122b9971febf61c0d8643c"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.3/ArcaneTV-5.3-arm32-p31.dm",
-                                                      "sha256":  "b6dc23120fb6111ce32dd7c2a95e441c894cd4d3d8552725f36d3b66cc259c23"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.4/ArcaneTV-5.4-arm32-p31.dm",
+                                                      "sha256":  "97f879d94396eca5b5e067fd701d908a03f946f7d149eb442090b3b19061fde5"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.3/ArcaneTV-5.3-arm64.apk",
-                               "sha256":  "6a2b4db723b5e6d202c6b80bd289dcf399adb2ee3570d20c0b646e7533e59b46",
-                               "size":  72406107,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.4/ArcaneTV-5.4-arm64.apk",
+                               "sha256":  "973abc923b59cdca2f327379533c25debad21cf96b7fc7a31d512a57aa347a75",
+                               "size":  72412199,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.3/ArcaneTV-5.3-arm64-p28.dm",
-                                                      "sha256":  "1a904ec3fb13dabcc71e82060d15e4bfa22e9825e302d95a6fa97fe46bcfe44d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.4/ArcaneTV-5.4-arm64-p28.dm",
+                                                      "sha256":  "e1d1f4a19d66c761f5bcb9791b0d1e87dddd499a6f122b9971febf61c0d8643c"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.3/ArcaneTV-5.3-arm64-p31.dm",
-                                                      "sha256":  "b6dc23120fb6111ce32dd7c2a95e441c894cd4d3d8552725f36d3b66cc259c23"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v5.4/ArcaneTV-5.4-arm64-p31.dm",
+                                                      "sha256":  "97f879d94396eca5b5e067fd701d908a03f946f7d149eb442090b3b19061fde5"
                                                   }
                                       }
                            }
