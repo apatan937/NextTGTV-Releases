@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "6.6",
-    "versionCode":  10439,
+    "versionName":  "6.7",
+    "versionCode":  10440,
     "publishedAt":  "2026-11-16",
-    "notes":  "ArcaneTV 6.6\r\n\r\n【插件站点】\r\n- 和 FongMi 一样，按接口里站点的 indexs 设置决定点海报去哪：indexs 为 1 的站点（豆瓣类片单）点海报会用片名搜索；其他站点（包括名字里带“豆瓣”、但自己写了详情和播放的接口）点进去是详情页，可以直接播放\r\n- 在插件首页和分类的海报上长按 OK，用片名在当前接口搜索，方便换源\r\n- 详情页打开后一条播放线路都没有时，自动用片名在当前接口搜索\r\n- 修复：本地包部分站点初始化失败、读不到共享配置（与 FongMi 一致）\r\n\r\n【播放器】\r\n- 弹幕面板新增「接口弹幕搜索」：有些接口自带弹幕搜索窗口（和 FongMi 一样），现在可以直接打开，在里面选好的弹幕马上加载；接口没提供这个窗口时，自动改用「搜索弹幕」\r\n- 选集列表里没有剧照的剧集，改为显示作品的图（变暗加播放图标），和详情页的剧集卡片一致，不再是黑块",
+    "notes":  "ArcaneTV 6.7\r\n\r\n【备份与同步】\r\n- 新增 WebDAV 云备份：在 设置 › 备份与同步 里填一个 WebDAV 文件夹地址（坚果云、NAS、本机 alist 都可以）、用户名、密码和备份口令，备份会加密后存到里面的 ArcaneTV 文件夹\r\n- 可以打开「自动备份」：每天打开应用时自动备份一次，内容没变就不重复上传；每台电视保留最近 10 份\r\n- 「查看云端备份」列出所有电视的备份，选一份就能预览、勾选并恢复；口令相同时不用再输入\r\n- 服务器限流时自动暂停、稍后再试；密码和口令只加密保存在这台电视上\r\n- 原来的「手动推送 / 拉取 WebDAV」由上面的云备份取代\r\n\r\n【插件站点】\r\n- 修复：部分接口的配置中心点按钮后提示错误、没法使用（更新后第一次打开应用会自动切换桌面图标入口，之后就正常；如果桌面上的图标消失，请在应用列表里重新找到 ArcaneTV）",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.6/ArcaneTV-6.6-arm32.apk",
-                               "sha256":  "0730adb1bba21d2b2cdb35501bf6928b5ea056dfcd23294f55f7f232764b8e28",
-                               "size":  70170576,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.7/ArcaneTV-6.7-arm32.apk",
+                               "sha256":  "658ce7a0cc2c9e2e6d60ef6fd8193257a380f2b4f2c5499c63b40f42547e7312",
+                               "size":  70179816,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.6/ArcaneTV-6.6-arm32-p28.dm",
-                                                      "sha256":  "880871ac56c9d53875d9d2846ba6e1f78f6dbeb855b3d18b3d253090ecf0fe2b"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.7/ArcaneTV-6.7-arm32-p28.dm",
+                                                      "sha256":  "c4cbfa86c362c26615999b37e712d3ad5cca5825a6d8f23d6437dd7ca1bf8ab1"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.6/ArcaneTV-6.6-arm32-p31.dm",
-                                                      "sha256":  "5b305fd9cbf46c0c9b30ee87aaa7cfa99ed213b23a308ebdf8ec03f9a5ffb0a5"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.7/ArcaneTV-6.7-arm32-p31.dm",
+                                                      "sha256":  "dcfdfa93328980a198af17740a9fc1c9db1aa82c22aed940aea7f609d411eee8"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.6/ArcaneTV-6.6-arm64.apk",
-                               "sha256":  "684d627a4e4b65831bbdcd339546d328bd43e1dca3254142b62f4294cca23dce",
-                               "size":  72520848,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.7/ArcaneTV-6.7-arm64.apk",
+                               "sha256":  "62fc1dfc22c7dbb6e086c27190897eda3e299f82699c4b01f93be02389073b5e",
+                               "size":  72529660,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.6/ArcaneTV-6.6-arm64-p28.dm",
-                                                      "sha256":  "880871ac56c9d53875d9d2846ba6e1f78f6dbeb855b3d18b3d253090ecf0fe2b"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.7/ArcaneTV-6.7-arm64-p28.dm",
+                                                      "sha256":  "c4cbfa86c362c26615999b37e712d3ad5cca5825a6d8f23d6437dd7ca1bf8ab1"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.6/ArcaneTV-6.6-arm64-p31.dm",
-                                                      "sha256":  "5b305fd9cbf46c0c9b30ee87aaa7cfa99ed213b23a308ebdf8ec03f9a5ffb0a5"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.7/ArcaneTV-6.7-arm64-p31.dm",
+                                                      "sha256":  "dcfdfa93328980a198af17740a9fc1c9db1aa82c22aed940aea7f609d411eee8"
                                                   }
                                       }
                            }
