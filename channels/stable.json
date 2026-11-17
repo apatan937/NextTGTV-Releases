@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "6.8",
-    "versionCode":  10441,
-    "publishedAt":  "2026-11-16",
-    "notes":  "ArcaneTV 6.8\r\n\r\n【搜索范围】\r\n- 每个站点只有一个「参与搜索」开关，所有搜索都按它来：插件页里的搜索、点豆瓣海报的搜索、主页搜索、选择片源。以前只有主页搜索按设置走，插件页搜索还是全部站点一起搜\r\n- 插件页点左上角的站点按钮（或按遥控器菜单键）打开站点列表，点「搜索站点」进入开关模式：按确定开 / 关一个站点，也可以「全开」「全关」，右边会标出 搜索 / 不搜 / 不支持\r\n- 设置 › 界面 里的「主页搜索范围」改名「搜索范围」，里面每个接口的站点开关和插件页是同一组，并加了「全部开启」「全部关闭」\r\n- 以前在主页搜索范围里选好的站点会自动变成新的开关，不用重新选；注意没选上的站点会变成「不搜」，插件页搜索也只搜选好的那些，想全搜就在站点列表里点「全开」\r\n- 主页搜索：一个接口开着的站点不超过 20 个时全部搜；多于 20 个时还是从开着的站点里自动挑常用的，避免电视卡死\r\n- 修复：搜索范围里关掉 Emby（或某台服务器）后，选择片源时仍然去搜这些 Emby；现在会跳过，并在状态里写「按搜索范围跳过 N 台 Emby」",
+    "versionName":  "6.9",
+    "versionCode":  10442,
+    "publishedAt":  "2026-11-17",
+    "notes":  "ArcaneTV 6.9\r\n\r\n【网盘大片播放】\r\n- 播放缓冲跟影视（蜂蜜）5.8.8 一致：电视内存允许时，缓冲从 32 MB 提高到约 137 MB，几十 GB 的原盘、杜比视界大文件网速有波动也不容易卡\r\n- 光盘镜像（ISO）改用和影视相同的读取方式，修复部分网盘 ISO 一直「正在准备播放」后报错\r\n- 同时开着影视 / 蜂蜜时，它会占用本地端口 9978，部分插件就播不了；现在会提示关闭那个 App 后重新打开 ArcaneTV\r\n\r\n【杜比视界】\r\n- 设置 › 播放 › 解码与音轨 新增「杜比视界」：自动 / 强制杜比 / 关闭（HDR10），和影视的选项一样\r\n- 杜比视界 P7（原盘常见）现在可以点亮：电视有杜比 P8 解码器时，自动把 P7 转成 P8.1 播放\r\n\r\n【字幕】\r\n- 修复：在字幕菜单选外挂字幕后，遥控器方向键和返回键全部失灵\r\n\r\n【插件】\r\n- 修复：没有资源的剧集自动去搜索后，按返回会回到插件首页；现在回到原来的详情页\r\n- 支持插件指定要播放的集数（vod_play_id），进入详情直接播那一集\r\n- 支持插件要求刷新首页分类\r\n- 修复：个别线路一打开就判定「看完」，并连续自动跳好几集\r\n\r\n【其他】\r\n- 离线徽章不再限 400 张，按容量限制（每个徽章包最多 128 MB）\r\n- 添加采集源：打开时不再自动弹出键盘，按确定才开始输入（搜狗输入法的电视按返回收不起键盘）",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.8/ArcaneTV-6.8-arm32.apk",
-                               "sha256":  "f5bff1468aa74daeb16447470e354b33239e4ea282f1924365712390e80a15a7",
-                               "size":  70189076,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.9/ArcaneTV-6.9-arm32.apk",
+                               "sha256":  "755c404ae8cedb395d36ae054a923e465efbd63e1af38bbb2c2f12b622e01beb",
+                               "size":  70834903,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.8/ArcaneTV-6.8-arm32-p28.dm",
-                                                      "sha256":  "cfbecf821beedf72b306cdc4c46608d7a9b2c5dbdfb164e14dbfdb353a1e19b6"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.9/ArcaneTV-6.9-arm32-p28.dm",
+                                                      "sha256":  "8474ff54066b77d9ee014c9b1430c3a40394dde62e14701c540f383cea477b92"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.8/ArcaneTV-6.8-arm32-p31.dm",
-                                                      "sha256":  "b2bea4b430ee5cb8f71143dd1761e19774dc4215a49170be177c349d1732409f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.9/ArcaneTV-6.9-arm32-p31.dm",
+                                                      "sha256":  "43a68f517d3fdb8adfee66980028627e3a06d69f84f2835bf0600b6a060cdeb0"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.8/ArcaneTV-6.8-arm64.apk",
-                               "sha256":  "8354f9977fa04f1b60481d894576ea471caafbe45dd366520daafec2483031d6",
-                               "size":  72539596,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.9/ArcaneTV-6.9-arm64.apk",
+                               "sha256":  "92578b816c5133732f9ef300bb95c4d187e020d1674c7416b7aeb88b26cd79e0",
+                               "size":  73232005,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.8/ArcaneTV-6.8-arm64-p28.dm",
-                                                      "sha256":  "cfbecf821beedf72b306cdc4c46608d7a9b2c5dbdfb164e14dbfdb353a1e19b6"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.9/ArcaneTV-6.9-arm64-p28.dm",
+                                                      "sha256":  "8474ff54066b77d9ee014c9b1430c3a40394dde62e14701c540f383cea477b92"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.8/ArcaneTV-6.8-arm64-p31.dm",
-                                                      "sha256":  "b2bea4b430ee5cb8f71143dd1761e19774dc4215a49170be177c349d1732409f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v6.9/ArcaneTV-6.9-arm64-p31.dm",
+                                                      "sha256":  "43a68f517d3fdb8adfee66980028627e3a06d69f84f2835bf0600b6a060cdeb0"
                                                   }
                                       }
                            }
