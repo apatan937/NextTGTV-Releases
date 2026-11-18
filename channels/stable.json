@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "7.7",
-    "versionCode":  10450,
+    "versionName":  "7.8",
+    "versionCode":  10451,
     "publishedAt":  "2026-11-18",
-    "notes":  "ArcaneTV 7.7\r\n\r\n【首页预告片】\r\n- 修复：部分电视（32 位系统，比如创维）打开「大图播放预告片」后一直不播放；现在只要不是流畅优先、内存不太低就会播放\r\n- 设置 › 界面 打开预告片后，如果这台电视不会播放，开关下面直接写明原因（流畅优先 / 内存或系统版本偏低），以及怎么改",
+    "notes":  "ArcaneTV 7.8\r\n\r\n【首页预告片】\r\n- 经典首页：预告片播放 3 秒、遥控器没动时，左侧导航、片名、观看历史和暗角一起淡出，整个屏幕只留预告片；左下角显示片名和「按任意键返回」\r\n- 按任意键界面马上回来，预告片照常停下",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.7/ArcaneTV-7.7-arm32.apk",
-                               "sha256":  "109bd1cc05ab64e3e4a954609de808d944c4d5de1222464988ed0f6d1e2b02c4",
-                               "size":  72109289,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm32.apk",
+                               "sha256":  "96403fdc5cc1e3231cf5adc7556f0aa8970f3d3082a5459e4388a7d34baac7d3",
+                               "size":  72111569,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.7/ArcaneTV-7.7-arm32-p28.dm",
-                                                      "sha256":  "cdb6c41f849da876a17686c0b29fa0e4e7dc5ddec692706f74854dd3d2c2213d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm32-p28.dm",
+                                                      "sha256":  "2b9936cd6eba59007cb71fc0be8d434b55dc43544d79b5dea7772075faef18a1"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.7/ArcaneTV-7.7-arm32-p31.dm",
-                                                      "sha256":  "757cd6ba910f18f203b982b5722d3096d072a7d42fb23cc7f40ac70adb95413d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm32-p31.dm",
+                                                      "sha256":  "6db7bcf5afbdd0da24c444267a3dc102cdb85acde82687ed286fc206c3855e0e"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.7/ArcaneTV-7.7-arm64.apk",
-                               "sha256":  "fc7a7cd9a7afdc9db46f907ddc7dcd3ab9ce40122ef23f236e367e1b9949770b",
-                               "size":  74649391,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm64.apk",
+                               "sha256":  "0a2fcb6021369ae47c237808c4595cc6a43bbc878fedcb121c89bb99271896ed",
+                               "size":  74652367,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.7/ArcaneTV-7.7-arm64-p28.dm",
-                                                      "sha256":  "cdb6c41f849da876a17686c0b29fa0e4e7dc5ddec692706f74854dd3d2c2213d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm64-p28.dm",
+                                                      "sha256":  "2b9936cd6eba59007cb71fc0be8d434b55dc43544d79b5dea7772075faef18a1"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.7/ArcaneTV-7.7-arm64-p31.dm",
-                                                      "sha256":  "757cd6ba910f18f203b982b5722d3096d072a7d42fb23cc7f40ac70adb95413d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm64-p31.dm",
+                                                      "sha256":  "6db7bcf5afbdd0da24c444267a3dc102cdb85acde82687ed286fc206c3855e0e"
                                                   }
                                       }
                            }
