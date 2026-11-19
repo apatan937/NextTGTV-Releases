@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "7.8",
-    "versionCode":  10451,
-    "publishedAt":  "2026-11-18",
-    "notes":  "ArcaneTV 7.8\r\n\r\n【首页预告片】\r\n- 经典首页：预告片播放 3 秒、遥控器没动时，左侧导航、片名、观看历史和暗角一起淡出，整个屏幕只留预告片；左下角显示片名和「按任意键返回」\r\n- 按任意键界面马上回来，预告片照常停下",
+    "versionName":  "8.1",
+    "versionCode":  10454,
+    "publishedAt":  "2026-11-19",
+    "notes":  "ArcaneTV 8.1\r\n\r\n【插件接口】\r\n- 支持带注释的配置（// … 、/* … */、# …），和 FongMi 一样能直接读；跳转（302）后的配置地址也能正常加载\r\n- 接口自带的代理页面（壁纸、弹幕、扫码配置页）不用先打开某个站点也能用\r\n- 兼容更多 jar 的代理写法\r\n\r\n【插件播放】\r\n- 修复：连续播放时下一集经常放不了、退出再进又可以。下一集改到本集最后几分钟才准备，不再提前 20 分钟拿好、等用时已经失效\r\n- 万一下一集的地址失效，会先在同一条线路重新获取一次，不再直接换到别的线路\r\n\r\n【首页预告片】\r\n- 预告片来源目前拒绝应用访问，预告片功能暂时关闭，设置里的相关开关也先隐藏；来源恢复后再打开，你原来的设置会保留\r\n\r\n【备份与同步】\r\n- 修复：坚果云 WebDAV 提示「无法访问到备份文件夹」\r\n- 修复：手机助手配置 WebDAV 时账号必须是邮箱格式；现在填用户名也可以\r\n- 手机助手登录 Emby 时「记住密码」默认打开，云备份会带上密码，换电视恢复后自动登录\r\n- 恢复完成会说明哪些 Emby 服务器的密码已带回、哪些要重新填一次\r\n- 备份现在会带上 Emby 的「图标库链接」；恢复到已有同一服务器的电视时，没设图标的服务器也会用上备份里的图标\r\n\r\n【应用更新】\r\n- 更新装好后自动删除下载的安装包（约 70 MB），给下次更新留出空间\r\n- 空间不够时先多清理一些能自动恢复的缓存；仍然不够会直接提示「存储空间不足」，不用再去清除应用数据",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm32.apk",
-                               "sha256":  "96403fdc5cc1e3231cf5adc7556f0aa8970f3d3082a5459e4388a7d34baac7d3",
-                               "size":  72111569,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.1/ArcaneTV-8.1-arm32.apk",
+                               "sha256":  "510368a787288ce7d9604af70d3387b74d87ecbc398fdc41695fb0ee3ebb8403",
+                               "size":  72121353,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm32-p28.dm",
-                                                      "sha256":  "2b9936cd6eba59007cb71fc0be8d434b55dc43544d79b5dea7772075faef18a1"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.1/ArcaneTV-8.1-arm32-p28.dm",
+                                                      "sha256":  "e6ec663b4924723bf37681fed89e7920d95cfca61c136e8869217666e98833b1"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm32-p31.dm",
-                                                      "sha256":  "6db7bcf5afbdd0da24c444267a3dc102cdb85acde82687ed286fc206c3855e0e"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.1/ArcaneTV-8.1-arm32-p31.dm",
+                                                      "sha256":  "fcbbaa632771bb90197a230b14ef08c6cdc022fdfff9a7a1710cb5c881fb9fb4"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm64.apk",
-                               "sha256":  "0a2fcb6021369ae47c237808c4595cc6a43bbc878fedcb121c89bb99271896ed",
-                               "size":  74652367,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.1/ArcaneTV-8.1-arm64.apk",
+                               "sha256":  "a76da57edea582e6e50a100737ba81ecfc0b67da9d6596b9c3846fa332822115",
+                               "size":  74661831,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm64-p28.dm",
-                                                      "sha256":  "2b9936cd6eba59007cb71fc0be8d434b55dc43544d79b5dea7772075faef18a1"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.1/ArcaneTV-8.1-arm64-p28.dm",
+                                                      "sha256":  "e6ec663b4924723bf37681fed89e7920d95cfca61c136e8869217666e98833b1"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v7.8/ArcaneTV-7.8-arm64-p31.dm",
-                                                      "sha256":  "6db7bcf5afbdd0da24c444267a3dc102cdb85acde82687ed286fc206c3855e0e"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.1/ArcaneTV-8.1-arm64-p31.dm",
+                                                      "sha256":  "fcbbaa632771bb90197a230b14ef08c6cdc022fdfff9a7a1710cb5c881fb9fb4"
                                                   }
                                       }
                            }
