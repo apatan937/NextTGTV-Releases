@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "9.1",
-    "versionCode":  10464,
+    "versionName":  "9.2",
+    "versionCode":  10465,
     "publishedAt":  "2026-11-20",
-    "notes":  "ArcaneTV 9.1\n\n【首页】\n- 修复：沉浸推荐首页顶部大图不显示（Emby 观看历史的背景图），现在和经典首页一样能显示",
+    "notes":  "ArcaneTV 9.2\n\n【播放】\n- 改进：自动解码一律先用硬解，不再因为解码器标的规格偏低就直接用软解（部分 4K 视频以前一进去就卡住）\n- 改进：硬解播放失败或一直没有画面时，自动改用软解\n- 改进：「播放失败」窗口里可以直接选「硬解播放」或「软解播放」\n\n【首页】\n- 修复：同一部片在不同 Emby 服务器、或从不同入口播放时，观看历史显示成多张卡",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.1/ArcaneTV-9.1-arm32.apk",
-                               "sha256":  "a409403de4841c543a0c22c291a05fe5f1f9a4d55cfb6461b0d73f2b97df0908",
-                               "size":  72182017,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.2/ArcaneTV-9.2-arm32.apk",
+                               "sha256":  "46af44f39e7fd2712106f83c440f4275766f8462cb92862d5ab10b35c44485d3",
+                               "size":  72183653,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.1/ArcaneTV-9.1-arm32-p28.dm",
-                                                      "sha256":  "9767c0264b74d472c401484b905197e3e11ae4e44a405d7835ae997f19e56d29"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.2/ArcaneTV-9.2-arm32-p28.dm",
+                                                      "sha256":  "a8a640103d438cc590a18c1a2aad170d7136dbfb0700809bf47cf484108245b6"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.1/ArcaneTV-9.1-arm32-p31.dm",
-                                                      "sha256":  "c42115a12337563e4384425cd5c7d29da30ca8ed41a4e73723d3b0f4de1c0f0d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.2/ArcaneTV-9.2-arm32-p31.dm",
+                                                      "sha256":  "a082468abd19b3ef2c738c46a4e1757c466e23dc70e9940e3a37a23ae2f1e505"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.1/ArcaneTV-9.1-arm64.apk",
-                               "sha256":  "a38cf6048384a9b58bb712c84bd768aeb1f39344acf4553cd7ebc5a39d7bc971",
-                               "size":  74722259,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.2/ArcaneTV-9.2-arm64.apk",
+                               "sha256":  "4a1410578e55cea873a0818d8eaa13816dabc76b07366c64c9090420a1bbe5f1",
+                               "size":  74723835,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.1/ArcaneTV-9.1-arm64-p28.dm",
-                                                      "sha256":  "9767c0264b74d472c401484b905197e3e11ae4e44a405d7835ae997f19e56d29"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.2/ArcaneTV-9.2-arm64-p28.dm",
+                                                      "sha256":  "a8a640103d438cc590a18c1a2aad170d7136dbfb0700809bf47cf484108245b6"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.1/ArcaneTV-9.1-arm64-p31.dm",
-                                                      "sha256":  "c42115a12337563e4384425cd5c7d29da30ca8ed41a4e73723d3b0f4de1c0f0d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.2/ArcaneTV-9.2-arm64-p31.dm",
+                                                      "sha256":  "a082468abd19b3ef2c738c46a4e1757c466e23dc70e9940e3a37a23ae2f1e505"
                                                   }
                                       }
                            }
