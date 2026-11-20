@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "8.6",
-    "versionCode":  10459,
-    "publishedAt":  "2026-11-19",
-    "notes":  "ArcaneTV 8.6\r\n\r\n【插件接口】\r\n- 支持带注释的配置（// … 、/* … */、# …），和 FongMi 一样能直接读；跳转（302）后的配置地址也能正常加载\r\n- 接口自带的代理页面（壁纸、弹幕、扫码配置页）不用先打开某个站点也能用\r\n- 兼容更多 jar 的代理写法\r\n\r\n【插件播放】\r\n- 修复：连续播放时下一集经常放不了、退出再进又可以。下一集改到本集最后几分钟才准备，不再提前 20 分钟拿好、等用时已经失效\r\n- 万一下一集的地址失效，会先在同一条线路重新获取一次，不再直接换到别的线路\r\n\r\n【首页预告片】\r\n- 预告片来源目前拒绝应用访问，预告片功能暂时关闭，设置里的相关开关也先隐藏；来源恢复后再打开，你原来的设置会保留\r\n\r\n【备份与同步】\r\n- 修复：坚果云 WebDAV 提示「无法访问到备份文件夹」\r\n- 修复：手机助手配置 WebDAV 时账号必须是邮箱格式；现在填用户名也可以\r\n- 手机助手登录 Emby 时「记住密码」默认打开，云备份会带上密码，换电视恢复后自动登录\r\n- 恢复完成会说明哪些 Emby 服务器的密码已带回、哪些要重新填一次\r\n- 备份现在会带上 Emby 的「图标库链接」；恢复到已有同一服务器的电视时，没设图标的服务器也会用上备份里的图标\r\n\r\n【应用更新】\r\n- 更新装好后自动删除下载的安装包（约 70 MB），给下次更新留出空间\r\n- 空间不够时先多清理一些能自动恢复的缓存；仍然不够会直接提示「存储空间不足」，不用再去清除应用数据\r\n\r\n【首页】\r\n- 沉浸式首页和插件首页的竖海报都放大了，上面留一点空隙不贴着顶部按钮\r\n- 沉浸式首页去掉片名上方的「继续观看」小字\r\n- 沉浸式首页：在观看历史选到哪部，回到「继续播放」时大图和按钮还是这部；再往下回到同一张卡；看完返回首页也还是这部",
+    "versionName":  "9.0",
+    "versionCode":  10463,
+    "publishedAt":  "2026-11-20",
+    "notes":  "ArcaneTV 9.0\n\n【首页】\n- 经典首页停在观看历史时，下面不再空出一块黑的：卡片区按当前这一排的高度留位置，大图跟着往下延伸\n- 流畅优先模式下竖海报也放大、往左挪，和其他模式一样（只是不加后面的柔和底色）\n- 竖海报的下半截不再透到观看历史卡片和片名后面\n\n【界面】\n- 去掉全部灰色说明文字：插件接口列表、接口版本、线路排序、采集源、弹幕接口、Emby 扫描与图标库、跳集、搜索结果、直播页按键说明、Telegram 频道、输入框下面的按键提示\n- 插件接口、Emby 服务器、数据源列表每行下面的灰字（已连接 · 用户名、已启用、N 条线路、配置已读取）都去掉；停用的行会变暗\n- 数据源页去掉「接口兼容」「采集资源」「网络」小标题；插件首页大图去掉「首页推荐」\n- 竖海报放大：经典首页和插件首页的竖海报更大、更靠近文字，后面的柔和底色更明显\n- 观看历史卡片去掉「继续观看」字样（只留集数、线路；看完的写「已看完」）；首页样式卡片去掉说明\n- 修复：经典首页在观看历史那一排时，下面露出下一排标题的半截\n- 只保留读取中、失败等状态和 TMDB 署名\n\n【首页】\n- 修复：经典首页选中部分观看历史时，大图是黑的没有海报；现在和观看历史卡片用同一张图，站点图片也能正常显示\n- 没有匹配到 TMDB 的观看记录，大图用站点自己的海报\n- 竖海报大图不再显得空：海报往左挪一点，右边也渐渐融入背景，后面再铺一层同一张海报的柔和底色（经典、沉浸、插件首页都一样；流畅优先模式不加这层，保持省力）\n\n【TMDB 匹配】\n- 插件详情页「匹配 TMDB」后，从哪张卡片点进来的（首页推荐大图、分类海报），那张卡片也一起换成匹配结果，不用再匹配第二次\n- 详情页自动匹配到的结果，也同步给点进来的那张卡片\n- 观看历史跟着匹配走：首页「观看历史」的海报、背景、年份换成 TMDB 的，不再是站点的小图\n- 新增「用站点海报」：不想用 TMDB 的作品，可以固定用站点自己的海报；「恢复自动匹配」可以改回来\n- 站点年份和 TMDB 对不上时更聪明：同名的剧只有一部时，即使站点写的是后来上架的年份也能自动匹配（电影只容许差一年），减少手动匹配\n- 首页观看历史补资料不再每隔几分钟重复搜索 TMDB，更省流量也更快\n\n【首页大图】\n- 没有 TMDB 横图的作品，大图改成竖海报：放大贴在右上角，往左、往下渐渐融入背景，没有硬边；背景颜色跟着海报变\n- 经典首页、沉浸首页和插件首页都用这个样式；站点的小图不再拉满整个屏幕变成马赛克\n- 流畅优先模式（Chromecast 等）：经典首页大图不再铺到观看历史下面，下半部分是背景色，和其他模式一样；也更省力\n\n【播放】\n- 修复：部分 Emby 影片的媒体文件放在网盘，网盘拒绝访问时一直播放失败；现在会自动改走 Emby 服务器自己的地址\n- 修复：部分电视播放 8 声道无损音轨（LPCM 7.1）没有声音；电视没接支持多声道的功放时，自动混成双声道\n\n【手机助手】\n- 手机助手新增「搜索」「弹幕」「界面」「关于」，和电视上的设置对齐\n- 可以用手机添加弹幕接口、填写自定义海报来源、添加徽章包链接，不用在电视上打字\n- 界面开关（观看历史、评分、排序、未上映、剧透模糊）、性能模式、插件详情搜其他站点，都能在手机上改\n\n【手机同步】\n- 手机版 Arcane 的观看记录和订阅可以同步到电视：在 设置 › 手机与备份 › WebDAV 用同一个账号和文件夹，按「同步手机的观看记录和订阅」，之后每 30 分钟自动同步一次\n- 订阅会自动加进插件接口；观看记录按订阅、站点和影片对上，电视上可以接着手机的进度看\n- 这一版只从手机读到电视，电视还不会写回手机\n\n【设置】\n- 去掉多余的说明文字（元数据、搜索范围、添加弹幕接口、手机助手二维码）\n- 修复：「更新离线图片」和「删除离线图片」两行叠在一起\n- 修复：元数据页往下翻后回不到最上面",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.6/ArcaneTV-8.6-arm32.apk",
-                               "sha256":  "12ac821ce12a60610ca6833d93aeccc8d66ef47f723c125f2e887c9d36a919f4",
-                               "size":  72158025,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.0/ArcaneTV-9.0-arm32.apk",
+                               "sha256":  "c1add5665e3b5ad6f4e9086aff3a448c6d24c32036ed568cc6ef4abc63141dc2",
+                               "size":  72182293,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.6/ArcaneTV-8.6-arm32-p28.dm",
-                                                      "sha256":  "4a23e197feb72834bbdfa34eb4026f032df16d089452f04c2fd5861d7351da5a"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.0/ArcaneTV-9.0-arm32-p28.dm",
+                                                      "sha256":  "4fe58fec69b91c3957159928a5e91aa8d2e5d2171ff5b99da211b662c076c0b2"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.6/ArcaneTV-8.6-arm32-p31.dm",
-                                                      "sha256":  "d09719347b43addbd4292cbc74367c059009f12a6e729733c167dfbb79e23a23"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.0/ArcaneTV-9.0-arm32-p31.dm",
+                                                      "sha256":  "b1f2a22ed5c8827de4a5744a0c785b4c9ca81e8309ce86ca0d0f87a070fc9fba"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.6/ArcaneTV-8.6-arm64.apk",
-                               "sha256":  "7b084aab6c2b3f2ce44bb69c5e93905c038d88c7c4bf6bf3935da3cdd8563770",
-                               "size":  74698975,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.0/ArcaneTV-9.0-arm64.apk",
+                               "sha256":  "279c1beb25b6252667f48d03fc8fbb4d4219c81e2842ad4bb1d2e5dcfcebbf69",
+                               "size":  74722475,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.6/ArcaneTV-8.6-arm64-p28.dm",
-                                                      "sha256":  "4a23e197feb72834bbdfa34eb4026f032df16d089452f04c2fd5861d7351da5a"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.0/ArcaneTV-9.0-arm64-p28.dm",
+                                                      "sha256":  "4fe58fec69b91c3957159928a5e91aa8d2e5d2171ff5b99da211b662c076c0b2"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v8.6/ArcaneTV-8.6-arm64-p31.dm",
-                                                      "sha256":  "d09719347b43addbd4292cbc74367c059009f12a6e729733c167dfbb79e23a23"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.0/ArcaneTV-9.0-arm64-p31.dm",
+                                                      "sha256":  "b1f2a22ed5c8827de4a5744a0c785b4c9ca81e8309ce86ca0d0f87a070fc9fba"
                                                   }
                                       }
                            }
