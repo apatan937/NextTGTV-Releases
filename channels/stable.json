@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "9.8",
-    "versionCode":  10471,
-    "publishedAt":  "2026-11-22",
-    "notes":  "ArcaneTV 9.8\n\n【直播】\n- 修复：直播控制栏打开过字幕等选择后，再次打开时按钮选不中\n- 新增：新的控制栏（长按确定或菜单键）：线路、回看、字幕、音轨、画面、收藏、直播源都在下面一排\n- 新增：直播源带字幕或多条音轨时可以切换\n- 新增：可以设置几秒放不出来就自动换线路（设置 › 数据源 › 直播源 › 自动换线路），直播源里写了超时时间也会照着换\n\n【首页】\n- 修复：部分电视打开 App 后首页海报和背景不显示，要按一下遥控器才出来（沉浸推荐、经典首页都适用）\n- 修复：经典首页快速上下移动时整行海报不显示、普通移动时闪一下\n- 修复：经典首页大图标题和背景对不上\n- 改进：经典首页在海报行也显示一行简介\n\n【弹幕】\n- 改进：去掉 App 自带的弹幕接口，弹幕只用你自己添加的接口、插件接口里的接口和视频平台的弹幕\n\n【播放】\n- 改进：「播放失败」面板重新排版：上面一行是重新连接和返回，下面一行是硬解、软解、服务器转码，当前用的解码方式打勾\n- 改进：换其他站点的提示框、恢复连接的提示，和「播放失败」用同一种样式\n- 修复：部分 Emby 影片存放的网盘暂时连不上时直接报错，现在会自动改由 Emby 服务器播放\n- 改进：服务器暂时连不上时，错误提示统一显示「服务器暂时连不上」\n- 修复：播放控制栏「更多」打开后几秒自己收起\n- 修复：退出或切换 4K 视频时误弹「播放失败」，还自动换了线路\n- 改进：网盘大文件（原盘、Remux）用多条连接同时读取，减少卡顿\n- 改进：部分杜比视界视频在非 HDR 电视上改用硬解，不再退到软解卡顿\n- 改进：电视不能直通的无损音轨（TrueHD、DTS-HD），会自动改选同语言、能直通的杜比音轨\n- 改进：视频面板里的视频轨改成「4K · 杜比视界」这样的写法\n\n【字幕】\n- 修复：在线字幕窗口按钮显示不全\n- 改进：在线字幕会依次用片名、TMDB 名称、原名搜索\n\n【插件】\n- 修复：打开站点列表时，焦点停在当前站点所在的位置\n- 改进：片名写明第几季的剧，详情页海报换成那一季的\n- 改进：「版本」按钮统一高度，「其他站点」去掉说明文字",
+    "versionName":  "10.0",
+    "versionCode":  10473,
+    "publishedAt":  "2026-11-23",
+    "notes":  "ArcaneTV 10.0\n\n【播放】\n- 修复：网盘大文件多连接读取时，偶尔会整个卡住不动\n- 修复：在播放中选另一集时，旧画面的错误会让新选的那集换线路、弹出其他站点\n- 改进：网盘大文件拖动进度时不再一开始就多开连接预读，省流量、出画面更快\n- 改进：原盘镜像拖动时连接偶尔失败会自动再试一次\n- 改进：自动换直通音轨时不会换到评论音轨、双声道或别的语言的配音\n- 改进：杜比视界硬解的兼容记录在系统升级后会重新检测\n- 修复：「选择线路」窗口打开时控制栏会自己收起\n- 改进：媒体信息改成中文；播放面板里选中的项用勾号标出；视频面板里的视频轨单独分组\n\n【弹幕】\n- 改进：去掉 App 自带的腾讯视频、爱奇艺弹幕，弹幕只用你自己添加的接口和插件接口里的接口\n\n【字幕】\n- 修复：在线字幕自动搜索时改关键词，结果会被自动搜索覆盖\n- 改进：在线字幕窗口加宽；没找到时列出所有试过的名字\n\n【首页】\n- 改进：经典首页海报间距加大；评分从海报角上移到片名下面，海报完整露出\n\n【插件】\n- 修复：站点首页的分类行一直显示上次打开时的内容，服务器有新片也不更新（刷新也没用）\n- 修复：站点列表里在当前站点按「上」会直接跳到顶部按钮\n- 改进：剧集海报按季显示也支持「2nd Season」这类写法，集名写明第几季的也会换成那一季的海报（插件观看历史和换源面板）",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.8/ArcaneTV-9.8-arm32.apk",
-                               "sha256":  "61e2ae88c4a7e673b8fbb448fbe083d94fbee8d13639edcfb1c648c3e4028d35",
-                               "size":  72235309,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm32.apk",
+                               "sha256":  "5141ce8960818347e98aa82eca62a5141d3c5da25a65923430553ba43b6ecc59",
+                               "size":  72241325,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.8/ArcaneTV-9.8-arm32-p28.dm",
-                                                      "sha256":  "f20207f51c0dcbf7d1bbd2ae51b44f9c51dce8501504c462cb5bb6183376148f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm32-p28.dm",
+                                                      "sha256":  "b8d142c9a608d34dccc44e1e89eff20c3e4721ec8f3a6874a80a05f825f711ee"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.8/ArcaneTV-9.8-arm32-p31.dm",
-                                                      "sha256":  "c5d8e17d89ac5de5976c93d536190aaa1f6d435728c792fdcdc977a9ac3d647d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm32-p31.dm",
+                                                      "sha256":  "369cb50d47584c87e5b6992b23a3a98b5140df92939c245b8ccceeb6faecc34c"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.8/ArcaneTV-9.8-arm64.apk",
-                               "sha256":  "57e95962cd8183f397f5e889a0830ba9e9ad0964f0d09de759f931578a13de73",
-                               "size":  74775479,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm64.apk",
+                               "sha256":  "06ed3cd27ac689b662fe27f9b54751f45687a6bd7fa38d160e4ccb4f4709afd8",
+                               "size":  74781755,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.8/ArcaneTV-9.8-arm64-p28.dm",
-                                                      "sha256":  "f20207f51c0dcbf7d1bbd2ae51b44f9c51dce8501504c462cb5bb6183376148f"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm64-p28.dm",
+                                                      "sha256":  "b8d142c9a608d34dccc44e1e89eff20c3e4721ec8f3a6874a80a05f825f711ee"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.8/ArcaneTV-9.8-arm64-p31.dm",
-                                                      "sha256":  "c5d8e17d89ac5de5976c93d536190aaa1f6d435728c792fdcdc977a9ac3d647d"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm64-p31.dm",
+                                                      "sha256":  "369cb50d47584c87e5b6992b23a3a98b5140df92939c245b8ccceeb6faecc34c"
                                                   }
                                       }
                            }
