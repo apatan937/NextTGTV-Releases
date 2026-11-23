@@ -1,45 +1,51 @@
 {
     "schema":  1,
     "channel":  "beta",
-    "versionName":  "2.1.14",
-    "versionCode":  10386,
-    "publishedAt":  "2026-11-08",
-    "notes":  "NextTGTV 2.1.14\n\n【流畅度（实测）】\n- 海报卡片减重：外观不变，但每张卡片的计算量减少约 60%，插件首页左右翻海报、上下换行更顺\n- 同一条按键路线上，界面主线程的工作量比 2.1.12 再少约 11%\n\n【包含 2.1.12 及以前的全部内容】",
+    "versionName":  "9.9",
+    "versionCode":  10472,
+    "publishedAt":  "2026-11-23",
+    "notes":  "ArcaneTV 9.9\n\n【首页】\n- 修复：部分电视打开 App 后，首页海报、背景和片名图片一直不出来，要按一下遥控器才显示（沉浸推荐、经典首页都适用）\n- 改进：图片加载卡住时会自动重新加载\n\n【播放】\n- 改进：「选择 Emby 版本」窗口去掉说明文字",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.14/NextTGTV-2.1.14-arm32.apk",
-                               "sha256":  "171c9e135475c1f2ad98ebd63dbad43c5c9eff1ef9838694a17d6a657459c4b8",
-                               "size":  69600379,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.9/ArcaneTV-9.9-arm32.apk",
+                               "sha256":  "c7f5911110e05053626cc93ccbe16095e335df12945352674de7428d7b2b600e",
+                               "size":  72252057,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.14/NextTGTV-2.1.14-arm32-p28.dm",
-                                                      "sha256":  "bad725e9f1736bf095f4270f4b1c5fd1908511789c9f87f7679b853c4223de9a"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.9/ArcaneTV-9.9-arm32-p28.dm",
+                                                      "sha256":  "8b91ed4f0921b444c81abb9a3b7b10410fe6e23c712e3cd36d41c59427f753f1"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.14/NextTGTV-2.1.14-arm32-p31.dm",
-                                                      "sha256":  "386b3ff16c38bddfc93847de5fb1800a0c6ee777e71ed857c9a86c6a603d570c"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.9/ArcaneTV-9.9-arm32-p31.dm",
+                                                      "sha256":  "debd098965418c70e74cf12461715fde6473dff1201d90fb60fb7c083207e7d7"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.14/NextTGTV-2.1.14-arm64.apk",
-                               "sha256":  "f8f37b338d3b0bcca6fe0aa4b0ad3060bdf6f98fe18a0ae5eeee5e2b07b2acc8",
-                               "size":  71950939,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.9/ArcaneTV-9.9-arm64.apk",
+                               "sha256":  "167035e07cf9316bc14a409eac618b8e7ef536c8991f647e236713f09a396ab9",
+                               "size":  74792103,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.14/NextTGTV-2.1.14-arm64-p28.dm",
-                                                      "sha256":  "bad725e9f1736bf095f4270f4b1c5fd1908511789c9f87f7679b853c4223de9a"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.9/ArcaneTV-9.9-arm64-p28.dm",
+                                                      "sha256":  "8b91ed4f0921b444c81abb9a3b7b10410fe6e23c712e3cd36d41c59427f753f1"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v2.1.14/NextTGTV-2.1.14-arm64-p31.dm",
-                                                      "sha256":  "386b3ff16c38bddfc93847de5fb1800a0c6ee777e71ed857c9a86c6a603d570c"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v9.9/ArcaneTV-9.9-arm64-p31.dm",
+                                                      "sha256":  "debd098965418c70e74cf12461715fde6473dff1201d90fb60fb7c083207e7d7"
                                                   }
                                       }
                            }
              },
     "mirrors":  [
+                    "https://gh-proxy.com/",
+                    "https://gh.acmsz.top/",
+                    "https://cdn.akaere.online/",
+                    "https://ghm.078465.xyz/",
+                    "https://github.tbap.top/",
                     "https://gh-proxy.org/",
-                    "https://ghfast.top/"
+                    "https://ghfast.top/",
+                    "https://gh.sixyin.com/"
                 ]
 }
