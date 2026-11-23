@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "10.0",
-    "versionCode":  10473,
+    "versionName":  "10.1",
+    "versionCode":  10474,
     "publishedAt":  "2026-11-23",
-    "notes":  "ArcaneTV 10.0\n\n【播放】\n- 修复：网盘大文件多连接读取时，偶尔会整个卡住不动\n- 修复：在播放中选另一集时，旧画面的错误会让新选的那集换线路、弹出其他站点\n- 改进：网盘大文件拖动进度时不再一开始就多开连接预读，省流量、出画面更快\n- 改进：原盘镜像拖动时连接偶尔失败会自动再试一次\n- 改进：自动换直通音轨时不会换到评论音轨、双声道或别的语言的配音\n- 改进：杜比视界硬解的兼容记录在系统升级后会重新检测\n- 修复：「选择线路」窗口打开时控制栏会自己收起\n- 改进：媒体信息改成中文；播放面板里选中的项用勾号标出；视频面板里的视频轨单独分组\n\n【弹幕】\n- 改进：去掉 App 自带的腾讯视频、爱奇艺弹幕，弹幕只用你自己添加的接口和插件接口里的接口\n\n【字幕】\n- 修复：在线字幕自动搜索时改关键词，结果会被自动搜索覆盖\n- 改进：在线字幕窗口加宽；没找到时列出所有试过的名字\n\n【首页】\n- 改进：经典首页海报间距加大；评分从海报角上移到片名下面，海报完整露出\n\n【插件】\n- 修复：站点首页的分类行一直显示上次打开时的内容，服务器有新片也不更新（刷新也没用）\n- 修复：站点列表里在当前站点按「上」会直接跳到顶部按钮\n- 改进：剧集海报按季显示也支持「2nd Season」这类写法，集名写明第几季的也会换成那一季的海报（插件观看历史和换源面板）",
+    "notes":  "ArcaneTV 10.1\n\n【首页】\n- 修复：IMDb 预告片恢复。首页大图和插件首页大图停留后又会播放预告片；设置 › 界面显示里的「大图播放预告片」「预告片最高画质」「预告片播放声音」重新出现，以前打开过的会继续生效\n\n【弹幕】\n- 修复：有的剧弹幕不会自动出来，要手动「搜索弹幕」才有；现在同一部剧在不同平台年份写法不一样也能自动匹配",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm32.apk",
-                               "sha256":  "5141ce8960818347e98aa82eca62a5141d3c5da25a65923430553ba43b6ecc59",
-                               "size":  72241325,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.1/ArcaneTV-10.1-arm32.apk",
+                               "sha256":  "f7de0ef7c9fe83ac247d6f554f9d18d41ddda36c59a60175db38c59570ffc116",
+                               "size":  72241329,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm32-p28.dm",
-                                                      "sha256":  "b8d142c9a608d34dccc44e1e89eff20c3e4721ec8f3a6874a80a05f825f711ee"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.1/ArcaneTV-10.1-arm32-p28.dm",
+                                                      "sha256":  "39adc7dc5f91389b0238b5af01c13ead69dcaa9c9ec5a7e314301d5e8d9b3e6e"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm32-p31.dm",
-                                                      "sha256":  "369cb50d47584c87e5b6992b23a3a98b5140df92939c245b8ccceeb6faecc34c"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.1/ArcaneTV-10.1-arm32-p31.dm",
+                                                      "sha256":  "dbcfe66d2ef41b1ac65569adc79608b0f85111a56453562e376cb130463f5519"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm64.apk",
-                               "sha256":  "06ed3cd27ac689b662fe27f9b54751f45687a6bd7fa38d160e4ccb4f4709afd8",
-                               "size":  74781755,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.1/ArcaneTV-10.1-arm64.apk",
+                               "sha256":  "b18cb242c5e073dd9c519c5a04118e0dd42a48ac4f944b501bed3375341c2ae3",
+                               "size":  74781891,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm64-p28.dm",
-                                                      "sha256":  "b8d142c9a608d34dccc44e1e89eff20c3e4721ec8f3a6874a80a05f825f711ee"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.1/ArcaneTV-10.1-arm64-p28.dm",
+                                                      "sha256":  "39adc7dc5f91389b0238b5af01c13ead69dcaa9c9ec5a7e314301d5e8d9b3e6e"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.0/ArcaneTV-10.0-arm64-p31.dm",
-                                                      "sha256":  "369cb50d47584c87e5b6992b23a3a98b5140df92939c245b8ccceeb6faecc34c"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v10.1/ArcaneTV-10.1-arm64-p31.dm",
+                                                      "sha256":  "dbcfe66d2ef41b1ac65569adc79608b0f85111a56453562e376cb130463f5519"
                                                   }
                                       }
                            }
