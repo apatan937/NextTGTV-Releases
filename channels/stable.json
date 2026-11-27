@@ -1,39 +1,39 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "versionName":  "12.9",
-    "versionCode":  10502,
-    "publishedAt":  "2026-11-26",
-    "notes":  "ArcaneTV 12.9\n\n【插件】\n- 修复：有些站点的爬虫文件下载很慢（几十秒），第一次打开时站点会空着，要再点一次才出来。现在会等下载完成，期间显示「正在下载爬虫…」\n\n【播放】（12.8 起）\n- 改进：在 Chromecast 这类显卡较弱的设备上，App 会在播放时自动识别，从下一次播放起改用轻量模式：同屏弹幕最多 60 条、关闭花式弹幕、弹幕特别多时均匀减少到 2 万条、预读缓冲缩短到 2 分钟，减少开弹幕时的掉帧和卡顿\n- 显卡够用的电视不受影响\n\n【诊断】（12.7 起）\n- 改进：部分接口在 Android 14 设备上整组站点打不开时，诊断日志会记下具体原因，方便排查\n\n【首页】（12.6 起）\n- 改进：经典首页在 1080P 电视（较小的显示尺寸）上，海报卡片和片名 logo 缩小，一排能看到更多海报，上方的背景大图露出更多；简介可以显示两行\n- 屏幕尺寸较大的设备保持原来的大小",
+    "versionName":  "13.3",
+    "versionCode":  10506,
+    "publishedAt":  "2026-11-27",
+    "notes":  "ArcaneTV 13.3\n\n【插件】\n- 新增：配置站、工具站的页面和蜂蜜一样显示：横版卡片（带站点给的小标签，如「点击设置」）、圆形图标、列表三种样式，由站点自己决定\n- 改进：没有指定样式的工具项从黑色按钮改成横版卡片\n- 改进：网盘等站点的文件夹页改成列表显示\n- 改进：去掉工具站首页多余的提示文字\n\n【插件 · JS 站点】（13.2）\n- 新增：支持 JS 站点（QuickJS），包括 drpy2 站点、猫源站点（含继承 BaseSpider 的写法和旧版内置的 crypto-js / cat.js 库），可以浏览首页、分类、详情、搜索和播放\n- 新增：JS 站点的本地代理（getProxy）\n- 改进：同时运行的 JS 站点数量按电视内存自动限制，长时间不用的站点会先关闭，避免占用过多内存\n- 改进：JS 站点的网络请求和蜂蜜一样，不校验 HTTPS 证书，证书有问题的站点也能打开\n\n【设置】（13.2）\n- 修复：数据源设置页滑到底部后再往上，标题和版本卡片回不来\n\n【字幕】（13.1）\n- 新增：播放时在「字幕」面板里可以调整字幕大小和字幕位置（上移 / 下移），改了马上生效\n- 改进：字幕大小和位置对 ASS 特效字幕、在线搜索的字幕也有效\n- 改进：设置里的「字幕大小」「底部留白」和播放面板是同一个设置，任一处修改，另一处同步\n\n【播放】（13.0）\n- 改进：自动切换刷新率时，黑屏期间会先暂停，画面恢复后再继续播放，不会错过内容\n- 改进：切换后的刷新率在退出播放后保持，下一部同样帧率的片子不用再黑屏一次；回到电视桌面时恢复原来的刷新率\n- 改进：片源标明帧率时，在加载阶段就切换，黑屏和加载时间重叠\n- 修复：显卡较弱的设备上，轻量模式有时会自己关掉又打开\n\n【观看历史】（13.0）\n- 新增：插件观看历史可以批量删除：按「批量删除」后勾选作品，支持全选，确认后一次删除\n- 新增：续播时链接失效，可以按「搜索其他资源继续播放」，在其他站点找到同一集后从上次的位置继续；也可以直接删除这条记录\n\n【弹幕】（13.0）\n- 修复：电影的弹幕自动匹配不上；现在会自动选有弹幕的版本\n- 改进：弹幕加载失败时显示「加载失败」，没匹配到时显示「未匹配到」，不再都显示「0 条」\n\n【插件 · 修复】（13.0 / 13.1）\n- 修复：部分站点打开作品详情失败（提示 detailContent 失败）\n- 修复：部分站点的分类打不开（提示 categoryContent 失败 · NumberFormatException）",
     "minSupportedCode":  0,
     "apks":  {
                  "arm32":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v12.9/ArcaneTV-12.9-arm32.apk",
-                               "sha256":  "8ac664453af99d571c2213246e59fc57c85eae65aed7b7831cf4367a92fecca3",
-                               "size":  72335141,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v13.3/ArcaneTV-13.3-arm32.apk",
+                               "sha256":  "3c9393373d5f717dcfd84285efabf3fa6337743707e212feffc9cde5322c57eb",
+                               "size":  73131345,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v12.9/ArcaneTV-12.9-arm32-p28.dm",
-                                                      "sha256":  "ad3a504a9d3e407b4701871e5f6c5ef76d34c66cf2e5c70d278ebad797f6db9c"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v13.3/ArcaneTV-13.3-arm32-p28.dm",
+                                                      "sha256":  "5dc6b22f85b4f707f20f200cfeef9c30ba944d01df411ba41fd3cc7bf323dd57"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v12.9/ArcaneTV-12.9-arm32-p31.dm",
-                                                      "sha256":  "c5aba11b1d7c7d79ae9c9347c6fb5181254dd7f9633dbebecf8a35b83eb3ccb1"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v13.3/ArcaneTV-13.3-arm32-p31.dm",
+                                                      "sha256":  "e8f75803b8754117014dec557230e4c1ed1dbe90c2d415df0a66e2f50725b472"
                                                   }
                                       }
                            },
                  "arm64":  {
-                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v12.9/ArcaneTV-12.9-arm64.apk",
-                               "sha256":  "879a972808f7fa968f51dce710611d3e07fd14d32b681d8d5f575d5b1ee80f2d",
-                               "size":  74875407,
+                               "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v13.3/ArcaneTV-13.3-arm64.apk",
+                               "sha256":  "994a9eaf6cc60972c289ca4ee6d0db2fa2b344dafb0321aa3a44659701dc6eb1",
+                               "size":  75719677,
                                "dm":  {
                                           "p28":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v12.9/ArcaneTV-12.9-arm64-p28.dm",
-                                                      "sha256":  "ad3a504a9d3e407b4701871e5f6c5ef76d34c66cf2e5c70d278ebad797f6db9c"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v13.3/ArcaneTV-13.3-arm64-p28.dm",
+                                                      "sha256":  "5dc6b22f85b4f707f20f200cfeef9c30ba944d01df411ba41fd3cc7bf323dd57"
                                                   },
                                           "p31":  {
-                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v12.9/ArcaneTV-12.9-arm64-p31.dm",
-                                                      "sha256":  "c5aba11b1d7c7d79ae9c9347c6fb5181254dd7f9633dbebecf8a35b83eb3ccb1"
+                                                      "url":  "https://github.com/apatan937/NextTGTV-Releases/releases/download/v13.3/ArcaneTV-13.3-arm64-p31.dm",
+                                                      "sha256":  "e8f75803b8754117014dec557230e4c1ed1dbe90c2d415df0a66e2f50725b472"
                                                   }
                                       }
                            }
